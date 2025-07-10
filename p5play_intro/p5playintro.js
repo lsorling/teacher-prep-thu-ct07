@@ -16,5 +16,5 @@ function setup() {
 function draw() {
   // write your codes here
   fill("red");
-  ellipse(300,300,200,200)
+  ellipse(300,300,200,200);
 }
