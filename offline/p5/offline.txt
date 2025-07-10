@@ -1,0 +1,2 @@
+offline means not using cdn 
+the problem with this means 
