@@ -1,4 +1,4 @@
 offline means not using cdn 
 the problem with this means 
 it wont be the latest version
-its a snapshot version 
+its a snapshot version whenever we last download it
