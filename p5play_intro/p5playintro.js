@@ -1,6 +1,10 @@
 let ball;
 let floor;
 
+function preload() {
+  
+}
+
 function setup() {
   // Set up the canvas
   new Canvas(400, 400);
