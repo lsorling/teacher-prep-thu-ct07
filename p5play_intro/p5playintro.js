@@ -35,6 +35,7 @@ function draw() {
   // what happen when you forget this line?
   background(250); //background color
 
+  if (ball.x > width) ball.vel.x = 
 
   // write your codes here
   floor.x = mouse.x;
