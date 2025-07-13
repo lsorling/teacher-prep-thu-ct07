@@ -47,4 +47,6 @@ function draw() {
 
   // write your codes here
   floor.x = mouse.x;
+  // if still have time
+  floor.y = mouse.y;
 }
