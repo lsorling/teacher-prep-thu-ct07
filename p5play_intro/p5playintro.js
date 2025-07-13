@@ -25,10 +25,10 @@ function setup() {
   let abc = new Sprite();
   abc.image = burgerImg;
   abc.image.scale = 0.25;
-  abc.co
+  abc.collider = "static";
 
-   // Create a bouncing ball sprite
-   // write your codes here
+  // Create a bouncing ball sprite
+  // write your codes here
   ball = new Sprite();
   ball.x = 50;
   ball.y = 50;
