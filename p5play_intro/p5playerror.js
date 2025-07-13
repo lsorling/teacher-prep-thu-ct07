@@ -14,5 +14,6 @@ function setup() {
 // forever
 // called 60 times per 1 second
 function draw() {
-
+    // must have this IF you uses new Sprite() in setup()
+    // otherwise its okay de
 }
