@@ -7,8 +7,9 @@ function setup() {
 
   console.log("Hello World");
 
-  let PI = 3.14159;
+  let pie = 3.14159;
   text("in Math, pi value is " + PI, 100, 100);
+
   // --- Exercise: Area of Triangle ---
   // write your codes here
 
