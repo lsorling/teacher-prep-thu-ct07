@@ -4,7 +4,7 @@
 function setup() {
     new Canvas(400, 600);
     textSize(16);
-    text("Hello");
+    text("Hello", 100, 100);
 }
 
 // forever
