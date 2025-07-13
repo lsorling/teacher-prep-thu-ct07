@@ -2,7 +2,7 @@ let ball;
 let floor;
 
 function preload() {
-  
+
 }
 
 function setup() {
@@ -20,6 +20,7 @@ function setup() {
   // rect(50,50,100,200);
 
   // End Basic shape testing
+  burgerImg = 
 
    // Create a bouncing ball sprite
    // write your codes here
