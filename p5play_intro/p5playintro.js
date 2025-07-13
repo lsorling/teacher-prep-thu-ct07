@@ -22,7 +22,7 @@ function setup() {
   ball = new Sprite();
   ball.x = 50;
   ball.y = 50;
-  ball.vel.x = 7;
+  ball.vel.x = 7; // start with vel.x = 1
   ball.vel.y = 7;
   ball.diameter = 50;
 
