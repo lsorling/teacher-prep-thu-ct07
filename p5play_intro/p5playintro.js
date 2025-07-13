@@ -24,7 +24,9 @@ function setup() {
 
   floor = new Sprite();
   ball.w = 200;
-  ball.h = 
+  ball.h = 25;
+  ball.x = 0;
+  ball.y = 300;
 }
 
 function draw() {
