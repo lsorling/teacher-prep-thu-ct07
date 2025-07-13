@@ -36,6 +36,7 @@ function draw() {
   background(250); //background color
 
   if (ball.x > width) ball.vel.x = ball.vel.x * -1;
+  if (ball.x < 0) ball.vel.x = ball.vel.x * -1;
 
   // write your codes here
   floor.x = mouse.x;
