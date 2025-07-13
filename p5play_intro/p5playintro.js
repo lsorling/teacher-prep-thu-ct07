@@ -23,7 +23,7 @@ function setup() {
   burgerImg = loadImage("assets\burger-icon.avif");
 
   textSize(16);
-  text("Score", 50, 50);
+  text("Score", 150, 150);
    // Create a bouncing ball sprite
    // write your codes here
   ball = new Sprite();
