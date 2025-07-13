@@ -24,8 +24,7 @@ function setup() {
   burgerImg = loadImage("assets/burger-icon.avif"); // my own learning
   let abc = new Sprite();
   abc.image = burgerImg;
-  abc.w = 50;
-  abc.h = 50;
+  abc.image.scale = 0.5;
 
    // Create a bouncing ball sprite
    // write your codes here
