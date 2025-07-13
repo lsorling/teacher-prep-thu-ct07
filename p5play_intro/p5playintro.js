@@ -30,6 +30,7 @@ function setup() {
 }
 
 function draw() {
+  // what happen when you forget this line?
     background(250); //background color
 
   // write your codes here
