@@ -4,7 +4,7 @@ let ball;
 // run once like when green flag clicked
 function setup() {
     new Canvas(400, 600);
-    background(200);
+    background(255);
     textSize(16);
     text("Hello", 100, 100);
 
