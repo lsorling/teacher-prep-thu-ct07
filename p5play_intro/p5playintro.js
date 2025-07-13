@@ -50,5 +50,7 @@ function draw() {
   // if still have time
   floor.y = mouse.y;
 
-  // challenge: how to not
+  // challenge: how to not let the ball go half-body into the wall
+  // then bounce
+  // immediately touch circu
 }
