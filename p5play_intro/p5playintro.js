@@ -22,8 +22,8 @@ function setup() {
   ball = new Sprite();
   ball.x = 50;
   ball.y = 50;
-  ball.vel.x = 1;
-  ball.vel.y = 1;
+  ball.vel.x = 7;
+  ball.vel.y = 7;
   ball.diameter = 50;
 
   floor = new Sprite();
@@ -31,7 +31,7 @@ function setup() {
   floor.h = 25;
   floor.x = 200;
   floor.y = 300;
-  floor.collider = "static"l
+  floor.collider = "static";
 }
 
 function draw() {
