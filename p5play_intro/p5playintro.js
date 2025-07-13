@@ -22,7 +22,8 @@ function setup() {
   // End Basic shape testing
   burgerImg = loadImage("assets\burger-icon.avif");
 
-  
+  textSize(16);
+  text("Score", 50, 50);
    // Create a bouncing ball sprite
    // write your codes here
   ball = new Sprite();
