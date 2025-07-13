@@ -22,6 +22,7 @@ function setup() {
   // End Basic shape testing
   burgerImg = loadImage("assets\burger-icon.avif");
 
+  
    // Create a bouncing ball sprite
    // write your codes here
   ball = new Sprite();
