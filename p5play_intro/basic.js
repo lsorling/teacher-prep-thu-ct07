@@ -3,7 +3,7 @@ function setup() {
   new Canvas(400, 600);
   background(255);
 
-  fill(255);
+  fill(155);
   textSize(16);
 
   console.log("Hello World");
