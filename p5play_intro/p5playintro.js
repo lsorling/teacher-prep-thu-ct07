@@ -23,10 +23,10 @@ function setup() {
   ball.diameter = 50;
 
   floor = new Sprite();
-  ball.w = 200;
-  ball.h = 25;
-  ball.x = 0;
-  ball.y = 300;
+  floor.w = 200;
+  floor.h = 25;
+  floor.x = 0;
+  floor.y = 300;
 }
 
 function draw() {
