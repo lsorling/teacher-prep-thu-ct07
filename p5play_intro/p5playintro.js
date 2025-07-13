@@ -21,11 +21,11 @@ function setup() {
   // rect(50,50,100,200);
 
   // End Basic shape testing
-  
+
   burgerImg = loadImage("assets/burger-icon.avif"); // my own learning
   let abc = new Sprite();
   abc.image = burgerImg;
-  abc.image.scale = 0.25;
+  abc.image.scale = 0.25; // use this to scale down the image drawn
   abc.collider = "static";
 
   // Create a bouncing ball sprite
