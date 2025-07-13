@@ -22,8 +22,6 @@ function setup() {
   // End Basic shape testing
   burgerImg = loadImage("assets\burger-icon.avif");
 
-  textSize(16);
-  text("Score", 150, 150);
    // Create a bouncing ball sprite
    // write your codes here
   ball = new Sprite();
@@ -44,6 +42,9 @@ function setup() {
 function draw() {
   // what happen when you forget this line?
   background(250); //background color
+
+  textSize(16);
+  text("Score", 150, 150);
 
   if (ball.x > width) ball.vel.x = ball.vel.x * -1;
   if (ball.x < 0) ball.vel.x = ball.vel.x * -1;
