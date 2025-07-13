@@ -20,6 +20,7 @@ function setup() {
    // Create a bouncing ball sprite
    // write your codes here
   ball = new Sprite();
+  ball.x = 50;
   ball.diameter = 50;
 
   floor = new Sprite();
