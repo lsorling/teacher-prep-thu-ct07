@@ -47,8 +47,11 @@ function draw() {
   textSize(16);
   text("Score: " + score, 150, 150);
 
-  if (ball.x > width) ball.vel.x = ball.vel.x * -1;
-  if (ball.x < 0) ball.vel.x = ball.vel.x * -1;
+  if (ball.x > width) {
+    ball.vel.x = ball.vel.x * -1;
+  }
+  if (ball.x < 0) 
+    ball.vel.x = ball.vel.x * -1;
 
   // let students do y themselves
   if (ball.y > width) ball.vel.y = ball.vel.y * -1;
