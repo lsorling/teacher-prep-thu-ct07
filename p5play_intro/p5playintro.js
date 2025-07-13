@@ -28,8 +28,8 @@ function setup() {
   ball = new Sprite();
   ball.x = 50;
   ball.y = 50;
-  // ball.vel.x = 7; // start with vel.x = 1
-  // ball.vel.y = 7; // start with vel.y = 1
+  ball.vel.x = 7; // start with vel.x = 1
+  ball.vel.y = 7; // start with vel.y = 1
   ball.diameter = 50;
 
   floor = new Sprite();
