@@ -3,8 +3,11 @@
 // run once like when green flag clicked
 function setup() {
     new Canvas(400, 600);
+    background(200);
     textSize(16);
     text("Hello", 100, 100);
+
+    ball = new Sprite();
 }
 
 // forever
