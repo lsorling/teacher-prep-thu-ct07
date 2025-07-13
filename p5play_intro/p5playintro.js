@@ -1,5 +1,6 @@
 let ball;
 let floor;
+let score = 0;
 
 function preload() {
 
