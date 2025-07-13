@@ -1,7 +1,8 @@
 function setup() {
   // write your codes here
   new Canvas(400, 600);
-  background(255);
+  // background(255);
+  fill(255);
 
   textSize(16);
 
