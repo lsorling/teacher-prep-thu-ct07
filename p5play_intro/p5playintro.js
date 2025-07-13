@@ -49,4 +49,6 @@ function draw() {
   floor.x = mouse.x;
   // if still have time
   floor.y = mouse.y;
+
+  // challenge: how to not
 }
