@@ -2,7 +2,9 @@
 
 // run once like when green flag clicked
 function setup() {
-
+    new Canvas(400, 600);
+    textSize(16);
+    text("Hello");
 }
 
 // forever
