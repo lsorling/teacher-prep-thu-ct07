@@ -21,6 +21,7 @@ function setup() {
    // write your codes here
   ball = new Sprite();
   ball.x = 50;
+  ball.y = 50;
   ball.vel.x = 1;
   ball.vel.y = 1;
   ball.diameter = 50;
