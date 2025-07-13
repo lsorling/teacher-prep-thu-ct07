@@ -31,7 +31,7 @@ function setup() {
   floor.h = 25;
   floor.x = 200;
   floor.y = 300;
-  floor.co
+  floor.collider = "static"l
 }
 
 function draw() {
