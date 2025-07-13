@@ -25,6 +25,7 @@ function setup() {
   let abc = new Sprite();
   abc.image = burgerImg;
   abc.image.scale = 0.25;
+  abc.co
 
    // Create a bouncing ball sprite
    // write your codes here
