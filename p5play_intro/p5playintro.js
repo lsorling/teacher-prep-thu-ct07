@@ -30,6 +30,8 @@ function setup() {
 }
 
 function draw() {
+    background(250); //background color
+
   // write your codes here
   floor.x = mouse.x;
 }
