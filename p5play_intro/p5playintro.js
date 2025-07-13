@@ -22,6 +22,7 @@ function setup() {
   ball = new Sprite();
   ball.x = 50;
   ball.vel.x = 1;
+  ball.vel.y = 1;
   ball.diameter = 50;
 
   floor = new Sprite();
