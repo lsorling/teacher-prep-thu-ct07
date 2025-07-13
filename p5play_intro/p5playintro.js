@@ -52,5 +52,5 @@ function draw() {
 
   // challenge: how to not let the ball go half-body into the wall
   // then bounce
-  // immediately touch circu
+  // immediately touch circumference, must bounce le
 }
