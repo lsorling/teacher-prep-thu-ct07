@@ -40,6 +40,8 @@ function draw() {
   if (ball.x > width) ball.vel.x = ball.vel.x * -1;
   if (ball.x < 0) ball.vel.x = ball.vel.x * -1;
 
+  // let students do y themselves
+
   // write your codes here
   floor.x = mouse.x;
 }
