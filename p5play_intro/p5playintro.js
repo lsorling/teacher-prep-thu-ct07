@@ -21,6 +21,7 @@ function setup() {
    // write your codes here
   ball = new Sprite();
   ball.x = 50;
+  ball.vel.x = 1;
   ball.diameter = 50;
 
   floor = new Sprite();
@@ -32,7 +33,8 @@ function setup() {
 
 function draw() {
   // what happen when you forget this line?
-    background(250); //background color
+  background(250); //background color
+
 
   // write your codes here
   floor.x = mouse.x;
