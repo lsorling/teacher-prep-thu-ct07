@@ -21,10 +21,11 @@ function setup() {
   // rect(50,50,100,200);
 
   // End Basic shape testing
-  burgerImg = loadImage("assets\burger-icon.avif"); // my own learning
+  burgerImg = loadImage("assets/burger-icon.avif"); // my own learning
+  b
   let abc = new Sprite();
   abc.image = burgerImg;
-  
+
    // Create a bouncing ball sprite
    // write your codes here
   ball = new Sprite();
