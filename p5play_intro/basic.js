@@ -7,6 +7,8 @@ function setup() {
 
   console.log("Hello World");
 
+  let PI = 3.14159;
+  
   // --- Exercise: Area of Triangle ---
   // write your codes here
 
