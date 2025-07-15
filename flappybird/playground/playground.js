@@ -116,6 +116,10 @@ function draw() {
         // every 1.5 second
         spawnPipePair();
     }
+
+    for (let pipe of pipeGroup) {
+        
+    }
 }
 
 // 5.3 pipes group
