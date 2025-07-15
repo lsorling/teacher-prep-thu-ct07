@@ -34,6 +34,8 @@ function setup() {
 
     world.gravity.y = 10;
 
+    // 4.3
+    floor = new Sprite
     // background("steelblue");
 }
 
