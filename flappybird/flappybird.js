@@ -18,7 +18,8 @@ function setup() {
 
     // bird sprite
     bird = new Sprite();
-    b
+    bird.x = width / 2;
+    
     background("steelblue");
 }
 
