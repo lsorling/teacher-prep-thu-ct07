@@ -1,4 +1,6 @@
-// the final game
+// the flappybird game
+// with floor, bird and background
+// also added world gravity and physics
 
 // the global variables section
 let bird, floor;
