@@ -1,6 +1,6 @@
 
 lesson 6
-
+-
 i made 2 mistakes till now
 
 #1. frameCount spelled all small letters
