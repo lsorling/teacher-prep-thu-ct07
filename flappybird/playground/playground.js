@@ -8,7 +8,8 @@ let flapMidImg, bg, base;
 // lesson 5
 let flapUpImg, flapDownImg;
 
-let pipeg
+let pipeGroup;
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
