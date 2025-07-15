@@ -14,7 +14,7 @@ let topPipe, bottomPipe;
 
 // 6.2 detect collision
 let gameoverImg;
-let game
+let gameoverLabel;
 
 // preload game assets like media and images
 function preload() {
