@@ -44,7 +44,7 @@ function preload() {
     // 6.3 start screen
     startScreenImg = loadImage('assets/message.png');
 
-    flapSound = createAudio('assets/');
+    flapSound = createAudio('assets/sfx_wing.mp3');
 }
 
 // run once like the "when green flag clicked"
