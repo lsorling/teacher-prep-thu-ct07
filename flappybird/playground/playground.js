@@ -54,7 +54,7 @@ function setup() {
     floor.img = base;
 
     // 5.3 pipes group
-    pipeGroup = new G
+    pipeGroup = new Group();
 }
 
 // forever block
