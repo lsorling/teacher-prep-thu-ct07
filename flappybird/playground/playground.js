@@ -96,7 +96,7 @@ let useNight = false;
 // in the setup()
 function draw() {
     // draw the background image
-    if (frameCount % 1500 == 0) {
+    if (!useName && frameCount % 1500 == 0) {
         useNight = true;
     }
     if (useNight) {
