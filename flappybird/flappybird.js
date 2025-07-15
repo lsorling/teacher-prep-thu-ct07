@@ -31,5 +31,6 @@ function setup() {
 // must have this empty function if you have any new Sprite() code 
 // in the setup()
 function draw() {
-    
+    // draw the background image
+    image(bg, 0,0)
 }
