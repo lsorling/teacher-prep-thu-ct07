@@ -28,6 +28,9 @@ function preload() {
     base = loadImage('assets/base.png');
 
     pipe = loadImage('assets/pipe-green.png');
+
+    // 6.2
+    gameoverImg = loadImage('assets/game')
 }
 
 // run once like the "when green flag clicked"
