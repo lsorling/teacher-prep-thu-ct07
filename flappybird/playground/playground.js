@@ -57,7 +57,7 @@ function setup() {
 
     // 4.2
     // game physics and world gravity
-    bird.collider = "dynamic";
+    bird.collider = "static";
     bird.mass = 2;
     bird.drag = 0.02; // air resistance
     bird.bounciness = 0.5; // how much it bounce when hitting the floor
@@ -92,7 +92,8 @@ function draw() {
         startScreenLabel.visible = false;
         startGame = true;
         bird.y = 200;
-        bird.visible = true;
+            bird.collider = "dynamic";
+
     }
 
     if (startGame) {
