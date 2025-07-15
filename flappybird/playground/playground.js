@@ -97,6 +97,7 @@ function draw() {
     }
 
     // 5.3 pipes group
+    // framecount is provided byp
     if (framecount === 1) {
         spawnPipePair(); // break up the codes into chunks
     }
