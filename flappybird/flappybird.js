@@ -17,7 +17,8 @@ function setup() {
     new Canvas(400,600);
 
     // bird sprite
-    
+    bird = new Sprite();
+    b
     background("steelblue");
 }
 
