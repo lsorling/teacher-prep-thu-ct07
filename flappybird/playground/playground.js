@@ -135,9 +135,9 @@ function draw() {
         // frameCount === 1 i.e. first frame
         // observation: the frameCount happens too fast, cannot see 1st set of pipes
         // after added 6.1 codes
-        if (frameCount === 55) {
-            spawnPipePair(); // break up the codes into chunks
-        }
+        // if (frameCount === 1) {
+        //     spawnPipePair(); // break up the codes into chunks
+        // }
             
         // 6.1 camera
         bird.x += 3; // make the bird move forward (to the right)
@@ -172,7 +172,7 @@ function draw() {
 function spawnPipePair() {
     // this is the code for creating pipe sprites
     let gap = 50;
-    let midY = random(170, height / 2); // random(min, max)
+    let midY = random(250, height / 2); // random(min, max)
 
     // create the bottom pipe sprite
     bottomPipe = new Sprite(bird.x + 400, midY + gap/2 +200, 52, 320, 'static');
