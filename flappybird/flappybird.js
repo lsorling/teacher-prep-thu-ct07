@@ -36,7 +36,8 @@ function setup() {
 
     // 4.3
     floor = new Sprite();
-    floor.x = 
+    floor.x = 200;
+    floor.y = h
     // background("steelblue");
 }
 
