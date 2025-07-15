@@ -126,7 +126,10 @@ function draw() {
         }
     }
 
-    // 6.2 detect collisio
+    // 6.2 detect collision
+    if (bird.collides(pipeGroup) || bird.collides(floor)) {
+        
+    }
 }
 
 // 5.3 pipes group
