@@ -95,7 +95,7 @@ function setup() {
 function draw() {
     // draw the background image
     if (frameCount % 2000 == 0) {
-        image(bgNigh, 0, 0, width, height);
+        image(bgNight, 0, 0, width, height);
     }
     else {
         image(bg, 0, 0, width, height);
