@@ -90,7 +90,8 @@ function draw() {
     image(bg, 0, 0, width, height);
 
     if (kb.presses('space') || mouse.presses()) {
-        startScreenLabel.v
+        startScreenLabel.visible = false;
+        bird.v
         startGame = true;
     }
 
