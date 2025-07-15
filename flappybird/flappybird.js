@@ -25,7 +25,9 @@ function setup() {
     bird.img = flapMidImg;
 
     // game physics and world gravity
-    bird.collider = 
+    bird.collider = "dynamic";
+    bird.mass = 2;
+    bird.
 
     // background("steelblue");
 }
