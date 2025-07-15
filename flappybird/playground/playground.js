@@ -75,7 +75,9 @@ function setup() {
     pipeGroup = new Group();
 
     // 6.3 start screen
-    startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none')
+    startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
+    st
+    
 }
 
 // forever block
