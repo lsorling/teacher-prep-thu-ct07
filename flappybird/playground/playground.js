@@ -12,7 +12,9 @@ let pipeGroup; // using group for pipes/obstacles
 let pipe; // img for pipe (but didnt follow naming convention)
 let topPipe, bottomPipe;
 
-// 
+// 6.2 detect collision
+let gameoverImg;
+let game
 
 // preload game assets like media and images
 function preload() {
