@@ -7,7 +7,8 @@ let flapMidImg, bg, base;
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
-    flapMidImg = loadImage('assets/yellowbird-midflap.png')
+    flapMidImg = loadImage('assets/yellowbird-midflap.png');
+    bg = load
 }
 
 // run once like the "when green flag clicked"
