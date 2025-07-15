@@ -1,6 +1,4 @@
 // write your codes here
-// the final game
-
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
@@ -22,6 +20,10 @@ let startScreenLabel;
 
 let startGame = false;
 
+// sound assets
+let flapSound;
+let dieSound;
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
@@ -40,6 +42,9 @@ function preload() {
 
     // 6.3 start screen
     startScreenImg = loadImage('assets/message.png');
+
+    flapSound = createAudio('assets/sfx_wing.mp3');
+    dieSound = createAudio('assets/sfx_die.mp3');
 }
 
 // run once like the "when green flag clicked"
@@ -88,19 +93,20 @@ function draw() {
     // draw the background image
     image(bg, 0, 0, width, height);
 
-    if (kb.presses('space') || mouse.presses()) {
-        startScreenLabel.visible = false;
-        startGame = true;
-        bird.y = 200;
-        bird.collider = "dynamic";
+    if (!startGame) { // got bug in slides
+        if (kb.presses('space') || mouse.presses()) {
+            startScreenLabel.visible = false;
+            startGame = true;
+            bird.collider = "dynamic";
+            bird.y = 200;
+        }
     }
-
-    if (startGame) {
-
+    else {
         // 4.4 keyboard and mouse inputs
         if (kb.presses('space') || mouse.presses()) {
-            bird.vel.y = -3;
+            bird.vel.y = -5;
             bird.sleeping = false; // wake up if fallen asleep
+            flapSound.play();
         }
 
         // if (mouse.presses()) {
@@ -112,7 +118,7 @@ function draw() {
         fill("blue");
         textSize(14);
         text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
-        // text('frameCount: ' + frameCount, 10, 40);
+        text('frameCount: ' + frameCount, 10, 40);
         text('is sleeping: ' + bird.sleeping, 10, 60);
 
         // 5.2 bird animation using if conditions
@@ -140,17 +146,17 @@ function draw() {
         }
             
         // 6.1 camera
-        bird.x += 3; // make the bird move forward (to the right)
+        bird.x += 2; // make the bird move forward (to the right)
         camera.x = bird.x; // lock the camera on the bird's pos
         floor.x = bird.x; // lock the floor to the bird's pos
 
-        if (frameCount % 90 === 0) {
+        if (frameCount % 120 === 0) {
             // every 1.5 second
             spawnPipePair();
         }
         // cleanup
         for (let pipe of pipeGroup) {
-            if (pipe.x < -50) {
+            if (pipe.x < 0) {
                 pipe.remove();
             }
         }
@@ -163,6 +169,7 @@ function draw() {
             gameoverLabel.rotation = 0;
             gameoverLabel.x = camera.x;
 
+            dieSound.play();
             noLoop(); // stop draw() function
         }
     }
@@ -171,8 +178,8 @@ function draw() {
 // 5.3 pipes group
 function spawnPipePair() {
     // this is the code for creating pipe sprites
-    let gap = 50;
-    let midY = random(170, height / 2); // random(min, max)
+    let gap = 70;
+    let midY = random(250, height -250); // random(min, max)
 
     // create the bottom pipe sprite
     bottomPipe = new Sprite(bird.x + 400, midY + gap/2 +200, 52, 320, 'static');

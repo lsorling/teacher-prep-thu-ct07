@@ -1,6 +1,7 @@
 
-something is wrong with firefox
-
+yeah i fixed my bug
+i had a line with bird.y = 200;
+-now smooth tests
 
 lesson 6
 -using collision added game over

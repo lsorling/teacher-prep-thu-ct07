@@ -1,6 +1,4 @@
 // write your codes here
-// the final game
-
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
@@ -24,6 +22,7 @@ let startGame = false;
 
 // sound assets
 let flapSound;
+let dieSound;
 
 // preload game assets like media and images
 function preload() {
@@ -45,6 +44,7 @@ function preload() {
     startScreenImg = loadImage('assets/message.png');
 
     flapSound = createAudio('assets/sfx_wing.mp3');
+    dieSound = createAudio('assets/sfx_die.mp3');
 }
 
 // run once like the "when green flag clicked"
@@ -93,18 +93,18 @@ function draw() {
     // draw the background image
     image(bg, 0, 0, width, height);
 
-    if (kb.presses('space') || mouse.presses()) {
-        startScreenLabel.visible = false;
-        startGame = true;
-        bird.y = 200;
-        bird.collider = "dynamic";
+    if (!startGame) { // got bug in slides
+        if (kb.presses('space') || mouse.presses()) {
+            startScreenLabel.visible = false;
+            startGame = true;
+            bird.collider = "dynamic";
+            bird.y = 200;
+        }
     }
-
-    if (startGame) {
-
+    else {
         // 4.4 keyboard and mouse inputs
         if (kb.presses('space') || mouse.presses()) {
-            bird.vel.y = -2;
+            bird.vel.y = -5;
             bird.sleeping = false; // wake up if fallen asleep
             flapSound.play();
         }
@@ -117,8 +117,8 @@ function draw() {
         // 4.5 debug info on screen
         fill("blue");
         textSize(14);
-        // text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
-        // text('frameCount: ' + frameCount, 10, 40);
+        text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+        text('frameCount: ' + frameCount, 10, 40);
         text('is sleeping: ' + bird.sleeping, 10, 60);
 
         // 5.2 bird animation using if conditions
@@ -141,12 +141,12 @@ function draw() {
         // frameCount === 1 i.e. first frame
         // observation: the frameCount happens too fast, cannot see 1st set of pipes
         // after added 6.1 codes
-        // if (frameCount === 1) {
-        //     spawnPipePair(); // break up the codes into chunks
-        // }
+        if (frameCount === 0) {
+            spawnPipePair(); // break up the codes into chunks
+        }
             
         // 6.1 camera
-        bird.x += 2; // make the bird move forward (to the right)
+        bird.x += 3; // make the bird move forward (to the right)
         camera.x = bird.x; // lock the camera on the bird's pos
         floor.x = bird.x; // lock the floor to the bird's pos
 
@@ -169,6 +169,7 @@ function draw() {
             gameoverLabel.rotation = 0;
             gameoverLabel.x = camera.x;
 
+            dieSound.play();
             noLoop(); // stop draw() function
         }
     }
