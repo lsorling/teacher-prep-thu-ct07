@@ -27,7 +27,8 @@ function setup() {
     // game physics and world gravity
     bird.collider = "dynamic";
     bird.mass = 2;
-    bird.
+    bird.drag = 0.02; // air resistance
+    bird.bounciness
 
     // background("steelblue");
 }
