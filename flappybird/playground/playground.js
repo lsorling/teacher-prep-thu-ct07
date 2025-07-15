@@ -92,8 +92,7 @@ function draw() {
         startScreenLabel.visible = false;
         startGame = true;
         bird.y = 200;
-            bird.collider = "dynamic";
-
+        bird.collider = "dynamic";
     }
 
     if (startGame) {
@@ -127,7 +126,7 @@ function draw() {
             bird.rotation = 20;
         }
         else {
-        bird.img = flapMidImg;
+            bird.img = flapMidImg;
             bird.rotation = 0;
         }
 
