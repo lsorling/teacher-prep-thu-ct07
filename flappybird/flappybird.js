@@ -1,5 +1,10 @@
 // the final game
 
+/
+function preload() {
+
+}
+
 // run once like the "when green flag clicked"
 function setup() {
     new Canvas(400,600);
