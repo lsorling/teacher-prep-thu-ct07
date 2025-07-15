@@ -89,6 +89,7 @@ function setup() {
     startScreenLabel.img = startScreenImg;
 }
 
+let useNight
 // forever block
 // must have this empty function if you have any new Sprite() code 
 // in the setup()
