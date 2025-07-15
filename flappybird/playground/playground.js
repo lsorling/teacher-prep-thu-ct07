@@ -103,4 +103,7 @@ function draw() {
 
 }
 
-// 
+// 5.3 pipes group
+function spawnPipePair() {
+    
+}
