@@ -4,7 +4,13 @@
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
+
+// lesson 5
 let flapUpImg, flapDownImg;
+
+let pipeGroup; // using group for pipes/obstacles
+let pipe; // img for pipe (but didnt follow naming convention)
+let topPipe, bottomPipe;
 
 // preload game assets like media and images
 function preload() {
@@ -16,6 +22,8 @@ function preload() {
 
     bg = loadImage('assets/background-day.png');
     base = loadImage('assets/base.png');
+
+    pipe = loadImage('assets/pipe-green.png');
 }
 
 // run once like the "when green flag clicked"
@@ -49,6 +57,8 @@ function setup() {
     floor.collider = 'static';
     floor.img = base;
 
+    // 5.3 pipes group
+    pipeGroup = new Group();
 }
 
 // forever block
@@ -89,4 +99,30 @@ function draw() {
        bird.img = flapMidImg;
         bird.rotation = 0;
     }
+
+    // 5.3 pipes group
+    // framecount is provided by p5play library
+    if (frameCount === 1) {
+        spawnPipePair(); // break up the codes into chunks
+    }
+    
+}
+
+// 5.3 pipes group
+function spawnPipePair() {
+    // this is the code for creating pipe sprites
+    let gap = 50;
+    let midY = height / 2;
+
+    // create the bottom pipe sprite
+    bottomPipe = new Sprite(400, midY + gap/2 +200, 52, 320, 'static');
+    bottomPipe.img = pipe;
+
+    // now the top pipe sprite
+    topPipe = new Sprite(400, midY - gap/2 -200, 52, 320, 'static');
+    topPipe.img = pipe;
+    topPipe.rotation = 180; // upside down
+
+    pipeGroup.add(bottomPipe);
+    pipeGroup.layer = 0; // go behind other sprites but on top of background image
 }
