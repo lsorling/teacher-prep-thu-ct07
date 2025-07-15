@@ -105,7 +105,7 @@ function draw() {
     if (frameCount === 1) {
         spawnPipePair(); // break up the codes into chunks
     }
-
+    c
 }
 
 // 5.3 pipes group
