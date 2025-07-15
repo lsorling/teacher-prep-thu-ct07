@@ -65,5 +65,6 @@ function draw() {
     // 4.5 debug info on screen
     fill("blue");
     textSize(14);
-    text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20)
+    text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+    
 }
