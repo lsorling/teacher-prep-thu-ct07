@@ -10,7 +10,7 @@ let flapUpImg, flapDownImg;
 
 let pipeGroup; // using group for pipes/obstacles
 let pipe; // img for pipe (but didnt follow naming convention)
-let bottomPipe;
+let topPipe, bottomPipe;
 
 // preload game assets like media and images
 function preload() {
