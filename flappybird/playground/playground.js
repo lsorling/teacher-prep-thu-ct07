@@ -106,6 +106,8 @@ function draw() {
         spawnPipePair(); // break up the codes into chunks
     }
     
+    // 6.1 camera
+    
 }
 
 // 5.3 pipes group
