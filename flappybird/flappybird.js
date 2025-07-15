@@ -62,5 +62,6 @@ function draw() {
         new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
     }
 
-    
+    // 4.5 debug info on screen
+    fill("blue")
 }
