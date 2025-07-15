@@ -77,7 +77,8 @@ function draw() {
 
     // 5.2 bird animation using if conditions
     if (bird.vel.y < -1) {
-        
+        bird.img = flapUpImg;
+        bird.rotation 
     }
     else if (bird.vel.y > 1) {
 
