@@ -160,7 +160,7 @@ function draw() {
             gameoverLabel = new Sprite(width/2, height/2, 192, 42);
             gameoverLabel.img = gameoverImg;
             gameoverLabel.layer = 100; // come to front most layer
-            gameoverLabel.rot
+            gameoverLabel.rotation = 0;
             gameoverLabel.x = camera.x;
 
             noLoop(); // stop draw() function
