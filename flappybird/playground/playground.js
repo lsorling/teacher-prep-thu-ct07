@@ -118,7 +118,7 @@ function draw() {
     }
 
     for (let pipe of pipeGroup) {
-        
+        if (pipe.x)
     }
 }
 
