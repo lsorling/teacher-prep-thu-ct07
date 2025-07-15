@@ -16,6 +16,7 @@ function preload() {
 function setup() {
     new Canvas(400,600);
 
+    // 4.1
     // bird sprite
     bird = new Sprite();
     bird.x = width / 2;
@@ -24,6 +25,7 @@ function setup() {
     bird.height = 30;
     bird.img = flapMidImg;
 
+    // 4.2
     // game physics and world gravity
     bird.collider = "dynamic";
     bird.mass = 2;
