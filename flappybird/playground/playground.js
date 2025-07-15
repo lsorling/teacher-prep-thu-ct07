@@ -8,7 +8,7 @@ let flapMidImg, bg, base;
 // lesson 5
 let flapUpImg, flapDownImg;
 
-let pipeGroup;
+let pipeGroup; // using group for pipes/obstacles
 
 // preload game assets like media and images
 function preload() {
