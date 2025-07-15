@@ -119,7 +119,7 @@ function spawnPipePair() {
     bottomPipe.img = pipe;
 
     // now the top pipe sprite
-    topPipe = new Sprite()
+    topPipe = new Sprite(400, midY - gap / 2 -200, )
 
     pipeGroup.add(bottomPipe);
     pipeGroup.layer = 0; // go behind other sprites but on top of background image
