@@ -3,7 +3,8 @@ lesson 6
 -using collision added game over
 after game over, add start screen
 
-observation
+observation:
+already missing the first set of pipes 
 
 i made 2 mistakes till now
 
