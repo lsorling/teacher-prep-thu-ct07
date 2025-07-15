@@ -178,7 +178,7 @@ function draw() {
 function spawnPipePair() {
     // this is the code for creating pipe sprites
     let gap = 70;
-    let midY = random(250, height / 2); // random(min, max)
+    let midY = random(250, height -250); // random(min, max)
 
     // create the bottom pipe sprite
     bottomPipe = new Sprite(bird.x + 400, midY + gap/2 +200, 52, 320, 'static');
