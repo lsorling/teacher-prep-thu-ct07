@@ -59,15 +59,15 @@ function draw() {
     image(bg, 0, 0, width, height);
 
     // 4.4 keyboard and mouse inputs
-    if (kb.presses('space')) {
+    if (kb.presses('space') || mouse.presses()) {
         bird.vel.y = -5;
         bird.sleeping = false; // wake up if fallen asleep
     }
 
-    if (mouse.presses()) {
-        let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
-        abc.bounciness = 1; // to better understand physics, so fun to watch
-    }
+    // if (mouse.presses()) {
+    //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
+    //     abc.bounciness = 1; // to better understand physics, so fun to watch
+    // }
 
     // 4.5 debug info on screen
     fill("blue");
