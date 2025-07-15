@@ -118,11 +118,11 @@ function draw() {
         spawnPipePair();
     }
     // cleanup
-    // for (let pipe of pipeGroup) {
-    //     if (pipe.x < -50) {
-    //         pipe.remove();
-    //     }
-    // }
+    for (let pipe of pipeGroup) {
+        if (pipe.x < -50) {
+            pipe.remove();
+        }
+    }
 }
 
 // 5.3 pipes group
