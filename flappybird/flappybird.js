@@ -8,7 +8,7 @@ let flapMidImg, bg, base;
 function preload() {
     // bird image, background image, and the floor
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
-    bg = load
+    bg = loadImage('assets/background')
 }
 
 // run once like the "when green flag clicked"
