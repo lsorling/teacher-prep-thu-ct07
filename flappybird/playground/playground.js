@@ -105,5 +105,5 @@ function draw() {
 
 // 5.3 pipes group
 function spawnPipePair() {
-    
+    // this is the code for creating pipe sprites
 }
