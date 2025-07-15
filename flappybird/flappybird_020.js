@@ -1,13 +1,19 @@
+// write your codes here
 // the final game
 
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
+let flapUpImg, flapDownImg;
 
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
+
+    flapUpImg = loadImage('assets/yellowbird-upflap.png');
+    flapDownImg = loadImage('assets/yellowbird-downflap.png');
+
     bg = loadImage('assets/background-day.png');
     base = loadImage('assets/base.png');
 }
@@ -53,18 +59,34 @@ function draw() {
     image(bg, 0, 0, width, height);
 
     // 4.4 keyboard and mouse inputs
-    if (kb.presses('space')) {
+    if (kb.presses('space') || mouse.presses()) {
         bird.vel.y = -5;
         bird.sleeping = false; // wake up if fallen asleep
     }
 
-    if (mouse.presses()) {
-        // nothing for mouse presses yet
-    }
+    // if (mouse.presses()) {
+    //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
+    //     abc.bounciness = 1; // to better understand physics, so fun to watch
+    // }
 
     // 4.5 debug info on screen
     fill("blue");
     textSize(14);
     text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
     text('is sleeping: ' + bird.sleeping, 10, 60);
+
+    // 5.2 bird animation using if conditions
+    // the bird is so cute now
+    if (bird.vel.y < -1) {
+        bird.img = flapUpImg;
+        bird.rotation = -20;
+    }
+    else if (bird.vel.y > 1) {
+       bird.img = flapDownImg;
+        bird.rotation = 20;
+    }
+    else {
+       bird.img = flapMidImg;
+        bird.rotation = 0;
+    }
 }
