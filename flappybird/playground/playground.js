@@ -102,7 +102,7 @@ function draw() {
 
     // 5.3 pipes group
     // framecount is provided by p5play library
-    if (framecount === 1) {
+    if (frameCount === 1) {
         spawnPipePair(); // break up the codes into chunks
     }
 
