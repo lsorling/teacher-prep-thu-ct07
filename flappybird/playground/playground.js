@@ -3,6 +3,8 @@
 let bird, floor;
 let flapMidImg, bg, base;
 
+let bgNight;
+let useNight = false;
 
 // lesson 5
 let flapUpImg, flapDownImg;
