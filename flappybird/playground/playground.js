@@ -125,6 +125,8 @@ function draw() {
             pipe.remove();
         }
     }
+
+    // 6.2 detect collisio
 }
 
 // 5.3 pipes group
