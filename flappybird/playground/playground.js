@@ -161,6 +161,7 @@ function draw() {
         // after added 6.1 codes
         // but this set of codes has it purpose
         // to test if your first set of pipes show or not
+        // before scrolling the bird forward to the right
         if (frameCount === 0) {
             spawnPipePair(); // break up the codes into chunks
         }
