@@ -20,7 +20,8 @@ function setup() {
     bird = new Sprite();
     bird.x = width / 2;
     bird.y = 200;
-    b
+    bird.width = 30;
+    bird.he
     background("steelblue");
 }
 
