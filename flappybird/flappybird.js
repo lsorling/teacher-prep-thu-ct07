@@ -54,11 +54,13 @@ function draw() {
 
     // 4.4 keyboard and mouse inputs
     if (kb.presses('space')) {
-        bird.vel.y = -15;
+        bird.vel.y = -5;
         bird.sleeping = false; // wake up if fallen asleep
     }
 
     if (mouse.presses()) {
         new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
     }
+
+    
 }
