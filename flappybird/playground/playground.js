@@ -4,8 +4,11 @@
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
+
+// lesson 5
 let flapUpImg, flapDownImg;
 
+let pipeg
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
