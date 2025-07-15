@@ -22,6 +22,7 @@ let startScreenLabel;
 
 let startGame = false;
 
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
