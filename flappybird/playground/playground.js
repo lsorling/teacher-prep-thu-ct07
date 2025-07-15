@@ -35,6 +35,9 @@ function preload() {
 
     // 6.2
     gameoverImg = loadImage('assets/gameover.png');
+
+    // 6.3
+    startScreenImg = loadImage('assets/')
 }
 
 // run once like the "when green flag clicked"
