@@ -15,6 +15,9 @@ function preload() {
 // run once like the "when green flag clicked"
 function setup() {
     new Canvas(400,600);
+
+    // bird sprite
+    
     background("steelblue");
 }
 
