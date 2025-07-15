@@ -108,7 +108,8 @@ function draw() {
     
     // 6.1 camera
     bird.x += 3;
-    camera.x 
+    camera.x = bird.x;
+    floor.x = bird.x; 
 }
 
 // 5.3 pipes group
