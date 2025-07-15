@@ -99,6 +99,10 @@ function draw() {
     if (!useName && frameCount % 1500 == 0) {
         useNight = true;
     }
+    if (useName && frameCount % 1500 == 0) {
+        useNight = false;
+    }    
+    
     if (useNight) {
         image(bgNight, 0, 0, width, height);
     }
