@@ -1,4 +1,5 @@
-// 
+// flappybird base
+// nothing except preload images, set background, set character (bird)
 
 // the global variables section
 let bird, floor;
