@@ -63,5 +63,7 @@ function draw() {
     }
 
     // 4.5 debug info on screen
-    fill("blue")
+    fill("blue");
+    textSize(20);
+    
 }
