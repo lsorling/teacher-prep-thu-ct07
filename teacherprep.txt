@@ -10,7 +10,7 @@ so that frameCount === 1 is unnecessary
 i made 3 mistakes till now
 
 #1. frameCount spelled all small letters
-#2. noLoop() spelled all small letters and the .ts helped me 
+#2. noLoop() spelled all small letters and the .ts helped me (problem with slide, not me)
 #3. found 3rd mistake, midY for spawnPipePair is height -250;
 
 lesson 5
