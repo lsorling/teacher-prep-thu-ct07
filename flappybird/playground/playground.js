@@ -135,7 +135,7 @@ function draw() {
         // frameCount === 1 i.e. first frame
         // observation: the frameCount happens too fast, cannot see 1st set of pipes
         // after added 6.1 codes
-        if (frameCount === 1) {
+        if (frameCount === 55) {
             spawnPipePair(); // break up the codes into chunks
         }
             
