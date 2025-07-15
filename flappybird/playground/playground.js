@@ -107,16 +107,16 @@ function draw() {
     if (frameCount === 1) {
         spawnPipePair(); // break up the codes into chunks
     }
-    
+    if (frameCount % 90 === 0) {
+        // every 1.5 second
+        spawnPipePair();
+    }
+        
     // 6.1 camera
     bird.x += 3; // make the bird move forward (to the right)
     camera.x = bird.x; // lock the camera on the bird's pos
     floor.x = bird.x; // lock the floor to the bird's pos
 
-    if (frameCount % 90 === 0) {
-        // every 1.5 second
-        spawnPipePair();
-    }
 
     // cleanup
     // for (let pipe of pipeGroup) {
