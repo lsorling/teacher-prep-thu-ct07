@@ -105,7 +105,7 @@ function draw() {
     if (frameCount === 1) {
         spawnPipePair(); // break up the codes into chunks
     }
-    c
+    
 }
 
 // 5.3 pipes group
@@ -115,11 +115,11 @@ function spawnPipePair() {
     let midY = height / 2;
 
     // create the bottom pipe sprite
-    bottomPipe = new Sprite(400, midY + gap / 2 +200, 52, 320, 'static');
+    bottomPipe = new Sprite(400, midY + gap/2 +200, 52, 320, 'static');
     bottomPipe.img = pipe;
 
     // now the top pipe sprite
-    topPipe = new Sprite(400, midY - gap / 2 -200, 52, 320, 'static');
+    topPipe = new Sprite(400, midY - gap/2 -200, 52, 320, 'static');
     topPipe.img = pipe;
     topPipe.rotation = 180; // upside down
 
