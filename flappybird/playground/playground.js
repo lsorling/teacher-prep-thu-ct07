@@ -177,7 +177,7 @@ function draw() {
 // 5.3 pipes group
 function spawnPipePair() {
     // this is the code for creating pipe sprites
-    let gap = 50;
+    let gap = 70;
     let midY = random(250, height / 2); // random(min, max)
 
     // create the bottom pipe sprite
