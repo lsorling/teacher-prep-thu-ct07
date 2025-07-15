@@ -61,7 +61,7 @@ function setup() {
     bird.mass = 2;
     bird.drag = 0.02; // air resistance
     bird.bounciness = 0.5; // how much it bounce when hitting the floor
-    bird.visible = fa
+    bird.visible = false;
 
     world.gravity.y = 10;
 
@@ -90,6 +90,7 @@ function draw() {
     image(bg, 0, 0, width, height);
 
     if (kb.presses('space') || mouse.presses()) {
+        st
     }
 
     if (startGame) {
