@@ -17,7 +17,9 @@ let gameoverImg;
 let gameoverLabel;
 
 // 6.3 game start screen
-let g
+let startScreenImg;
+let startScreenLabel;
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
