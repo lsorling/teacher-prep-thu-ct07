@@ -4,7 +4,7 @@
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
-let flapUpImg, flap
+let flapUpImg, flapDownImg;
 
 // preload game assets like media and images
 function preload() {
