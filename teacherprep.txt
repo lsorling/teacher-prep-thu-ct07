@@ -1,4 +1,7 @@
 
+something is wrong with firefox
+
+
 lesson 6
 -using collision added game over
 after game over, add start screen
