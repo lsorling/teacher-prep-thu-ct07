@@ -5,7 +5,7 @@ after game over, add start screen
 
 observation:
 already missing the first set of pipes 
-so that frameCount === 1 is unne
+so that frameCount === 1 is unnecessary
 
 i made 2 mistakes till now
 
