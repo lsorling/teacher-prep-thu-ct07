@@ -98,6 +98,6 @@ function draw() {
 
     // 5.3 pipes group
     if (framecount === 1) {
-        
+        spawnPipePair()
     }
 }
