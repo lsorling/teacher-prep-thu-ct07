@@ -59,6 +59,6 @@ function draw() {
     }
 
     if (mouse.presses()) {
-        
+        new Sprite(mouse.x, 200, )
     }
 }
