@@ -135,8 +135,7 @@ function draw() {
 
     // 6.2 detect collision
     if (bird.collides(pipeGroup) || bird.collides(floor)) {
-        nooop(); // stop draw() function
-
+        noLoop(); // stop draw() function
     }
 }
 
