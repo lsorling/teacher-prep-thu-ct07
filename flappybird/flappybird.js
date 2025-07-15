@@ -24,7 +24,8 @@ function setup() {
     bird.height = 30;
     bird.img = flapMidImg;
 
-    //
+    // game physics and world gravity
+    bird.collider = 
 
     // background("steelblue");
 }
