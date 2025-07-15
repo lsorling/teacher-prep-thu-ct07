@@ -2,7 +2,7 @@
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
-let bgNight;
+
 
 // lesson 5
 let flapUpImg, flapDownImg;
@@ -88,8 +88,6 @@ function setup() {
     startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
     startScreenLabel.img = startScreenImg;
 }
-
-let useNight = false;
 
 // forever block
 // must have this empty function if you have any new Sprite() code 
