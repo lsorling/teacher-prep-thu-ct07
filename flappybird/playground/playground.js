@@ -140,7 +140,7 @@ function draw() {
         // }
             
         // 6.1 camera
-        bird.x += 3; // make the bird move forward (to the right)
+        bird.x += 2; // make the bird move forward (to the right)
         camera.x = bird.x; // lock the camera on the bird's pos
         floor.x = bird.x; // lock the floor to the bird's pos
 
