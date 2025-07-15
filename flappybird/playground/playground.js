@@ -70,7 +70,7 @@ function draw() {
 
     // 4.4 keyboard and mouse inputs
     if (kb.presses('space') || mouse.presses()) {
-        bird.vel.y = -5;
+        bird.vel.y = -3;
         bird.sleeping = false; // wake up if fallen asleep
     }
 
@@ -107,7 +107,7 @@ function draw() {
     }
     
     // 6.1 camera
-    bird.x += 3; // make the bird f
+    bird.x += 3; // make the bird move forward (to the right)
     camera.x = bird.x; // lock the camera on the bird's pos
     floor.x = bird.x; // lock the floor to the bird's pos
 }
