@@ -4,7 +4,7 @@ lesson 6
 i made 2 mistakes till now
 
 #1. frameCount spelled all small letters
-#2. noLoop() spelled all small letters and the 
+#2. noLoop() spelled all small letters and the .ts helped me 
 
 lesson 5
 intro group (of sprites)
