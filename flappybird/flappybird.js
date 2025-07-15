@@ -32,5 +32,5 @@ function setup() {
 // in the setup()
 function draw() {
     // draw the background image
-    image(bg, 0, 0, width, height)
+    image(bg, 0, 0, width, height);
 }
