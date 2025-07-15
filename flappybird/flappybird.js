@@ -40,7 +40,8 @@ function setup() {
     floor.y = height - 20;
     floor.width = 400; // same size as canvas
     floor.height = 125;
-    fl
+    floor.collider = 'static';
+    floor.img = base;
     // background("steelblue");
 }
 
