@@ -2,6 +2,7 @@
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
+let bgNight;
 
 // lesson 5
 let flapUpImg, flapDownImg;
