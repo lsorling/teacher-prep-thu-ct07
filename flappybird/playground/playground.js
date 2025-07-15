@@ -22,6 +22,8 @@ let startScreenLabel;
 
 let startGame = false;
 
+// sound assets
+let flapSound;
 
 // preload game assets like media and images
 function preload() {
@@ -41,6 +43,8 @@ function preload() {
 
     // 6.3 start screen
     startScreenImg = loadImage('assets/message.png');
+
+    flapSound = load
 }
 
 // run once like the "when green flag clicked"
