@@ -51,4 +51,6 @@ function setup() {
 function draw() {
     // draw the background image
     image(bg, 0, 0, width, height);
+
+    // 4.4
 }
