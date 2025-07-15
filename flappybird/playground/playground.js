@@ -41,8 +41,7 @@ function preload() {
     // 6.3 start screen
     startScreenImg = loadImage('assets/message.png');
 
-    startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
-    startScreenLabel.img = startScreenImg;
+
 }
 
 // run once like the "when green flag clicked"
@@ -79,6 +78,8 @@ function setup() {
     // 5.3 pipes group
     pipeGroup = new Group();
 
+    startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
+    startScreenLabel.img = startScreenImg;
 }
 
 // forever block
@@ -90,7 +91,7 @@ function draw() {
 
     if (kb.presses('space') || mouse.presses()) {
     }
-    
+
     if (startGame) {
 
         // 4.4 keyboard and mouse inputs
