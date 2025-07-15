@@ -22,6 +22,8 @@ function preload() {
 
     bg = loadImage('assets/background-day.png');
     base = loadImage('assets/base.png');
+
+    pipe = loadImage('assets/')
 }
 
 // run once like the "when green flag clicked"
