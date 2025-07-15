@@ -36,10 +36,9 @@ function preload() {
     // 6.2
     gameoverImg = loadImage('assets/gameover.png');
 
-    // 6.3
+    // 6.3 start screen
     startScreenImg = loadImage('assets/message.png');
 
-    // 6.3 start screen
     startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
     startScreenLabel.img = startScreenImg;
 }
