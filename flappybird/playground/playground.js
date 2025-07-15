@@ -16,6 +16,8 @@ let topPipe, bottomPipe;
 let gameoverImg;
 let gameoverLabel;
 
+// 6.3 game start screen
+let g
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
@@ -139,7 +141,7 @@ function draw() {
         gameoverLabel.img = gameoverImg;
         gameoverLabel.layer = 100; // come to front most layer
         gameoverLabel.x = camera.x;
-        
+
         noLoop(); // stop draw() function
     }
 }
