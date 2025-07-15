@@ -59,7 +59,8 @@ function draw() {
     }
 
     if (mouse.presses()) {
-        new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
+        let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
+        abc.bounciness = 1;
     }
 
     // 4.5 debug info on screen
