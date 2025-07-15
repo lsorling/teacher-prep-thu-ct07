@@ -59,7 +59,7 @@ function draw() {
     }
 
     if (mouse.presses()) {
-        // nothing for mouse presses
+        // nothing for mouse presses yet
     }
 
     // 4.5 debug info on screen
