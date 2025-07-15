@@ -3,6 +3,7 @@
 let bird, floor;
 let flapMidImg, bg, base;
 
+// let them think of algo to switch day/night cycle
 let bgNight;
 let useNight = false;
 
