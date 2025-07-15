@@ -68,7 +68,7 @@ function setup() {
 
     // 4.2
     // game physics and world gravity
-    bird.collider = "static";
+    bird.collider = "static"; // stop the bird from falling due to gravity
     bird.mass = 2;
     bird.drag = 0.02; // air resistance
     bird.bounciness = 0.5; // how much it bounce when hitting the floor
