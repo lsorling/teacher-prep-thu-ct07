@@ -12,6 +12,10 @@ let pipeGroup; // using group for pipes/obstacles
 let pipe; // img for pipe (but didnt follow naming convention)
 let topPipe, bottomPipe;
 
+// 6.2 detect collision
+let gameoverImg;
+let gameoverLabel;
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
@@ -24,6 +28,9 @@ function preload() {
     base = loadImage('assets/base.png');
 
     pipe = loadImage('assets/pipe-green.png');
+
+    // 6.2
+    gameoverImg = loadImage('assets/gameover.png');
 }
 
 // run once like the "when green flag clicked"
@@ -70,7 +77,7 @@ function draw() {
 
     // 4.4 keyboard and mouse inputs
     if (kb.presses('space') || mouse.presses()) {
-        bird.vel.y = -5;
+        bird.vel.y = -3;
         bird.sleeping = false; // wake up if fallen asleep
     }
 
@@ -83,6 +90,7 @@ function draw() {
     fill("blue");
     textSize(14);
     text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+    text('frameCount: ' + frameCount, 10, 40);
     text('is sleeping: ' + bird.sleeping, 10, 60);
 
     // 5.2 bird animation using if conditions
@@ -92,7 +100,7 @@ function draw() {
         bird.rotation = -20;
     }
     else if (bird.vel.y > 1) {
-       bird.img = flapDownImg;
+        bird.img = flapDownImg;
         bird.rotation = 20;
     }
     else {
@@ -101,25 +109,53 @@ function draw() {
     }
 
     // 5.3 pipes group
-    // framecount is provided by p5play library
+    // frameCount is provided by p5play library
+    // frameCount === 1 i.e. first frame
+    // observation: the frameCount happens too fast, cannot see 1st set of pipes
+    // after added 6.1 codes
     if (frameCount === 1) {
         spawnPipePair(); // break up the codes into chunks
     }
-    
+        
+    // 6.1 camera
+    bird.x += 3; // make the bird move forward (to the right)
+    camera.x = bird.x; // lock the camera on the bird's pos
+    floor.x = bird.x; // lock the floor to the bird's pos
+
+    if (frameCount % 90 === 0) {
+        // every 1.5 second
+        spawnPipePair();
+    }
+    // cleanup
+    for (let pipe of pipeGroup) {
+        if (pipe.x < -50) {
+            pipe.remove();
+        }
+    }
+
+    // 6.2 detect collision
+    if (bird.collides(pipeGroup) || bird.collides(floor)) {
+        gameoverLabel = new Sprite(width/2, height/2, 192, 42);
+        gameoverLabel.img = gameoverImg;
+        gameoverLabel.layer = 100; // come to front most layer
+        gameoverLabel.x = camera.x;
+        
+        noLoop(); // stop draw() function
+    }
 }
 
 // 5.3 pipes group
 function spawnPipePair() {
     // this is the code for creating pipe sprites
     let gap = 50;
-    let midY = height / 2;
+    let midY = random(170, height / 2); // random(min, max)
 
     // create the bottom pipe sprite
-    bottomPipe = new Sprite(400, midY + gap/2 +200, 52, 320, 'static');
+    bottomPipe = new Sprite(bird.x + 400, midY + gap/2 +200, 52, 320, 'static');
     bottomPipe.img = pipe;
 
     // now the top pipe sprite
-    topPipe = new Sprite(400, midY - gap/2 -200, 52, 320, 'static');
+    topPipe = new Sprite(bird.x + 400, midY - gap/2 -200, 52, 320, 'static');
     topPipe.img = pipe;
     topPipe.rotation = 180; // upside down
 
