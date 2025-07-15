@@ -79,4 +79,10 @@ function draw() {
     if (bird.vel.y < -1) {
         
     }
+    else if (bird.vel.y > 1) {
+
+    }
+    else {
+
+    }
 }
