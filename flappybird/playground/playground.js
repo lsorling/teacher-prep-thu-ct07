@@ -10,6 +10,10 @@ let flapUpImg, flapDownImg;
 function preload() {
     // bird image, background image, and the floor
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
+
+    flapMidImg = loadImage('assets/yellowbird-midflap.png');
+    flapMidImg = loadImage('assets/yellowbird-midflap.png');
+
     bg = loadImage('assets/background-day.png');
     base = loadImage('assets/base.png');
 }
