@@ -52,5 +52,8 @@ function draw() {
     // draw the background image
     image(bg, 0, 0, width, height);
 
-    // 4.4
+    // 4.4 keyboard and mouse inputs
+    if (kb.presses('space')) {
+        bird.vel.y = -15;
+    }
 }
