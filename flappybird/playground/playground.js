@@ -95,7 +95,11 @@ function setup() {
 function draw() {
     // draw the background image
     if (frameCount % 2000 == 0) {
-    image(bg, 0, 0, width, height);
+        image(bgNigh, 0, 0, width, height);
+    }
+    else {
+        image(bg, 0, 0, width, height);
+    }
 
     if (!startGame) { // got bug in slides
         if (kb.presses('space') || mouse.presses()) {
