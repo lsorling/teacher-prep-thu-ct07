@@ -1,5 +1,8 @@
 // the final game
 
+// the global variables section
+let bird, floor;
+let flap
 // preload game assets like media and images
 function preload() {
 
