@@ -88,6 +88,76 @@ function draw() {
     // draw the background image
     image(bg, 0, 0, width, height);
 
+    if (startGame) {
+
+    // 4.4 keyboard and mouse inputs
+    if (kb.presses('space') || mouse.presses()) {
+        bird.vel.y = -3;
+        bird.sleeping = false; // wake up if fallen asleep
+    }
+
+    // if (mouse.presses()) {
+    //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
+    //     abc.bounciness = 1; // to better understand physics, so fun to watch
+    // }
+
+    // 4.5 debug info on screen
+    fill("blue");
+    textSize(14);
+    text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+    text('frameCount: ' + frameCount, 10, 40);
+    text('is sleeping: ' + bird.sleeping, 10, 60);
+
+    // 5.2 bird animation using if conditions
+    // the bird is so cute now
+    if (bird.vel.y < -1) {
+        bird.img = flapUpImg;
+        bird.rotation = -20;
+    }
+    else if (bird.vel.y > 1) {
+        bird.img = flapDownImg;
+        bird.rotation = 20;
+    }
+    else {
+       bird.img = flapMidImg;
+        bird.rotation = 0;
+    }
+
+    // 5.3 pipes group
+    // frameCount is provided by p5play library
+    // frameCount === 1 i.e. first frame
+    // observation: the frameCount happens too fast, cannot see 1st set of pipes
+    // after added 6.1 codes
+    if (frameCount === 1) {
+        spawnPipePair(); // break up the codes into chunks
+    }
+        
+    // 6.1 camera
+    bird.x += 3; // make the bird move forward (to the right)
+    camera.x = bird.x; // lock the camera on the bird's pos
+    floor.x = bird.x; // lock the floor to the bird's pos
+
+    if (frameCount % 90 === 0) {
+        // every 1.5 second
+        spawnPipePair();
+    }
+    // cleanup
+    for (let pipe of pipeGroup) {
+        if (pipe.x < -50) {
+            pipe.remove();
+        }
+    }
+
+    // 6.2 detect collision
+    if (bird.collides(pipeGroup) || bird.collides(floor)) {
+        gameoverLabel = new Sprite(width/2, height/2, 192, 42);
+        gameoverLabel.img = gameoverImg;
+        gameoverLabel.layer = 100; // come to front most layer
+        gameoverLabel.x = camera.x;
+
+        noLoop(); // stop draw() function
+    }
+    }
 }
 
 // 5.3 pipes group
