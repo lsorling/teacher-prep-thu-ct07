@@ -23,13 +23,13 @@ function setup() {
     bird.width = 30;
     bird.height = 30;
     bird.img = flapMidImg;
-    
-    background("steelblue");
+
+    // background("steelblue");
 }
 
 // forever block
 // must have this empty function if you have any new Sprite() code 
 // in the setup()
 function draw() {
-
+    
 }
