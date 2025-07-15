@@ -1,0 +1,128 @@
+// write your codes here
+// the final game
+
+// the global variables section
+let bird, floor;
+let flapMidImg, bg, base;
+
+// lesson 5
+let flapUpImg, flapDownImg;
+
+let pipeGroup; // using group for pipes/obstacles
+let pipe; // img for pipe (but didnt follow naming convention)
+let topPipe, bottomPipe;
+
+// preload game assets like media and images
+function preload() {
+    // bird image, background image, and the floor
+    flapMidImg = loadImage('assets/yellowbird-midflap.png');
+
+    flapUpImg = loadImage('assets/yellowbird-upflap.png');
+    flapDownImg = loadImage('assets/yellowbird-downflap.png');
+
+    bg = loadImage('assets/background-day.png');
+    base = loadImage('assets/base.png');
+
+    pipe = loadImage('assets/pipe-green.png');
+}
+
+// run once like the "when green flag clicked"
+function setup() {
+    new Canvas(400,600);
+
+    // 4.1
+    // bird sprite
+    bird = new Sprite();
+    bird.x = width / 2;
+    bird.y = 200;
+    bird.width = 30;
+    bird.height = 30;
+    bird.img = flapMidImg;
+
+    // 4.2
+    // game physics and world gravity
+    bird.collider = "dynamic";
+    bird.mass = 2;
+    bird.drag = 0.02; // air resistance
+    bird.bounciness = 0.5; // how much it bounce when hitting the floor
+
+    world.gravity.y = 10;
+
+    // 4.3
+    floor = new Sprite();
+    floor.x = 200;
+    floor.y = height - 20;
+    floor.width = 400; // same size as canvas
+    floor.height = 125;
+    floor.collider = 'static';
+    floor.img = base;
+
+    // 5.3 pipes group
+    pipeGroup = new Group();
+}
+
+// forever block
+// must have this empty function if you have any new Sprite() code 
+// in the setup()
+function draw() {
+    // draw the background image
+    image(bg, 0, 0, width, height);
+
+    // 4.4 keyboard and mouse inputs
+    if (kb.presses('space') || mouse.presses()) {
+        bird.vel.y = -5;
+        bird.sleeping = false; // wake up if fallen asleep
+    }
+
+    // if (mouse.presses()) {
+    //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
+    //     abc.bounciness = 1; // to better understand physics, so fun to watch
+    // }
+
+    // 4.5 debug info on screen
+    fill("blue");
+    textSize(14);
+    text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
+    text('is sleeping: ' + bird.sleeping, 10, 60);
+
+    // 5.2 bird animation using if conditions
+    // the bird is so cute now
+    if (bird.vel.y < -1) {
+        bird.img = flapUpImg;
+        bird.rotation = -20;
+    }
+    else if (bird.vel.y > 1) {
+       bird.img = flapDownImg;
+        bird.rotation = 20;
+    }
+    else {
+       bird.img = flapMidImg;
+        bird.rotation = 0;
+    }
+
+    // 5.3 pipes group
+    // framecount is provided by p5play library
+    if (frameCount === 1) {
+        spawnPipePair(); // break up the codes into chunks
+    }
+    
+}
+
+// 5.3 pipes group
+function spawnPipePair() {
+    // this is the code for creating pipe sprites
+    let gap = 50;
+    let midY = height / 2;
+
+    // create the bottom pipe sprite
+    bottomPipe = new Sprite(400, midY + gap/2 +200, 52, 320, 'static');
+    bottomPipe.img = pipe;
+
+    // now the top pipe sprite
+    topPipe = new Sprite(400, midY - gap/2 -200, 52, 320, 'static');
+    topPipe.img = pipe;
+    topPipe.rotation = 180; // upside down
+
+    pipeGroup.add(bottomPipe);
+    pipeGroup.layer = 0; // go behind other sprites but on top of background image
+}
