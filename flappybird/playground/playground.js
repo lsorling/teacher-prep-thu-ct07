@@ -112,5 +112,5 @@ function draw() {
 function spawnPipePair() {
     // this is the code for creating pipe sprites
     let gap = 50;
-    let midY = h
+    let midY = height / 2;
 }
