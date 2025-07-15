@@ -38,6 +38,10 @@ function preload() {
 
     // 6.3
     startScreenImg = loadImage('assets/message.png');
+
+    // 6.3 start screen
+    startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
+    startScreenLabel.img = startScreenImg;
 }
 
 // run once like the "when green flag clicked"
@@ -74,9 +78,6 @@ function setup() {
     // 5.3 pipes group
     pipeGroup = new Group();
 
-    // 6.3 start screen
-    startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
-    startScreenLabel.img = startScreenImg;
 }
 
 // forever block
