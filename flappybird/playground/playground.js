@@ -61,7 +61,6 @@ function setup() {
     bird.mass = 2;
     bird.drag = 0.02; // air resistance
     bird.bounciness = 0.5; // how much it bounce when hitting the floor
-    bird.visible = false;
 
     world.gravity.y = 10;
 
