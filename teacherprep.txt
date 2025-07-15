@@ -2,7 +2,9 @@
 lesson 4
 once starting to code flappybird game
 do in playground.js
-then copy to flapy
+then copy to flappybird.js to test
+then do backup, ready for next lesson
+
 teacher prep use chrome on my laptop
 
 my yahoo account
