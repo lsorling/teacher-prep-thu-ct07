@@ -95,4 +95,9 @@ function draw() {
        bird.img = flapMidImg;
         bird.rotation = 0;
     }
+
+    // 5.3 pipes group
+    if (framecount === 1) {
+        
+    }
 }
