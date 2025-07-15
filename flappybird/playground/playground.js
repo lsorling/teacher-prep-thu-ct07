@@ -62,7 +62,7 @@ function setup() {
     bird.drag = 0.02; // air resistance
     bird.bounciness = 0.5; // how much it bounce when hitting the floor
 
-    world.gravity.y = 10;
+    world.gravity.y = 8;
 
     // 4.3
     floor = new Sprite();
