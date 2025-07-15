@@ -73,6 +73,8 @@ function setup() {
 
     // 5.3 pipes group
     pipeGroup = new Group();
+
+    // 6.3 start screen
 }
 
 // forever block
