@@ -53,6 +53,7 @@ function setup() {
     floor.collider = 'static';
     floor.img = base;
 
+    // 5.3 pipe group
 }
 
 // forever block
