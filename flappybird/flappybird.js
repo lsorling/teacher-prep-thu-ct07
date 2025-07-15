@@ -59,8 +59,7 @@ function draw() {
     }
 
     if (mouse.presses()) {
-        let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
-        abc.bounciness = 1; // to better understand physics, so fun to watch
+        // nothing for mouse presses
     }
 
     // 4.5 debug info on screen
