@@ -107,9 +107,9 @@ function draw() {
     }
     
     // 6.1 camera
-    bird.x += 3;
-    camera.x = bird.x;
-    floor.x = bird.x; 
+    bird.x += 3; // make the bird f
+    camera.x = bird.x; // lock the camera on the bird's pos
+    floor.x = bird.x; // lock the floor to the bird's pos
 }
 
 // 5.3 pipes group
