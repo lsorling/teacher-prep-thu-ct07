@@ -76,4 +76,7 @@ function draw() {
     text('is sleeping: ' + bird.sleeping, 10, 60);
 
     // 5.2 bird animation using if conditions
+    if (bird.vel.y < -1) {
+        
+    }
 }
