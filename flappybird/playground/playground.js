@@ -74,4 +74,6 @@ function draw() {
     textSize(14);
     text('vel.y: ' + bird.vel.y.toFixed(2), 10, 20);
     text('is sleeping: ' + bird.sleeping, 10, 60);
+
+    // 5.
 }
