@@ -94,7 +94,7 @@ function setup() {
 // in the setup()
 function draw() {
     // draw the background image
-    if (frameCount % 2000 == )
+    if (frameCount % 2000 == 0) {
     image(bg, 0, 0, width, height);
 
     if (!startGame) { // got bug in slides
