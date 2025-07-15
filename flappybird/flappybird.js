@@ -1,6 +1,6 @@
 // the final game
 
-/
+// preload game assets like media and images
 function preload() {
 
 }
