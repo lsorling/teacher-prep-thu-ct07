@@ -89,13 +89,15 @@ function setup() {
     startScreenLabel.img = startScreenImg;
 }
 
-let useNight
+let useNight = true;
+
 // forever block
 // must have this empty function if you have any new Sprite() code 
 // in the setup()
 function draw() {
     // draw the background image
     if (frameCount % 1500 == 0) {
+    if (use)
         image(bgNight, 0, 0, width, height);
     }
     else {
