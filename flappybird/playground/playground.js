@@ -30,7 +30,7 @@ function preload() {
     pipe = loadImage('assets/pipe-green.png');
 
     // 6.2
-    gameoverImg = loadImage('assets/game')
+    gameoverImg = loadImage('assets/gameover.png');
 }
 
 // run once like the "when green flag clicked"
