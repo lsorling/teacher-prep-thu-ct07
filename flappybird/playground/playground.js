@@ -76,13 +76,14 @@ function draw() {
     text('is sleeping: ' + bird.sleeping, 10, 60);
 
     // 5.2 bird animation using if conditions
+    // the bird is so cute now
     if (bird.vel.y < -1) {
         bird.img = flapUpImg;
-        bird.rotation = -30;
+        bird.rotation = -20;
     }
     else if (bird.vel.y > 1) {
        bird.img = flapDownImg;
-        bird.rotation = 30;
+        bird.rotation = 20;
     }
     else {
        bird.img = flapMidImg;
