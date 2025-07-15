@@ -104,7 +104,7 @@ function draw() {
 
         // 4.4 keyboard and mouse inputs
         if (kb.presses('space') || mouse.presses()) {
-            bird.vel.y = -1.1;
+            bird.vel.y = -5;
             bird.sleeping = false; // wake up if fallen asleep
             flapSound.play();
         }
