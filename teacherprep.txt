@@ -11,7 +11,7 @@ i made 3 mistakes till now
 
 #1. frameCount spelled all small letters
 #2. noLoop() spelled all small letters and the .ts helped me 
-#3. found 3rd mistake 
+#3. found 3rd mistake, midY for spawn
 
 lesson 5
 intro group (of sprites)
