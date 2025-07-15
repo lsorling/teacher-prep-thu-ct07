@@ -97,7 +97,9 @@ let useNight = true;
 function draw() {
     // draw the background image
     if (frameCount % 1500 == 0) {
-    if (use)
+        
+    }
+    if (useNight) {
         image(bgNight, 0, 0, width, height);
     }
     else {
