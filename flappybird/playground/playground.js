@@ -135,7 +135,9 @@ function draw() {
 
     // 6.2 detect collision
     if (bird.collides(pipeGroup) || bird.collides(floor)) {
-        gameoverLabel = new Sprite(width/2, height/2, 192, )
+        gameoverLabel = new Sprite(width/2, height/2, 192, 42);
+        gameoverLabel.img = gameoverImg;
+        gameoverLabel
         noLoop(); // stop draw() function
     }
 }
