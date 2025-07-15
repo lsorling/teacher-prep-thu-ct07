@@ -150,7 +150,7 @@ function draw() {
         }
         // cleanup
         for (let pipe of pipeGroup) {
-            if (pipe.x < -50) {
+            if (pipe.x < 0) {
                 pipe.remove();
             }
         }
