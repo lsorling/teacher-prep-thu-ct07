@@ -1,4 +1,53 @@
 // write your codes here
+/*
+changelog:
+
+///////////////////////////////////////////////////////////////////////////////
+
+algo1:
+to change background from day to night, then to day
+introduce another boolean variable: useNight
+
+    // draw the background image
+    if (frameCount % 1200 == 0) {
+        useNight = !useNight;
+    }
+    
+    if (useNight) {
+        image(bgNight, 0, 0, width, height);
+    }
+    else {
+        image(bg, 0, 0, width, height);
+    }
+
+vs original code:
+
+        image(bg, 0, 0, width, height);
+
+///////////////////////////////////////////////////////////////////////////////
+
+bug1:
+the loop to remove pipes that are out of the view is wrong
+cos camera is locked on moving bird sprite
+so pipe.x is static
+
+add debugging on screen to check:
+        text('pipeGroup count: ' + pipeGroup.length, 10, 80);
+
+wrong:
+for (let pipe of pipeGroup) {
+            if (pipe.x < 0) {
+                pipe.remove();
+            }
+        }
+correct:
+for (let pipe of pipeGroup) {
+            if ((camera.x-pipe.x) > 500) { // fixed the bug
+                pipe.remove();
+            }
+        }
+
+*/
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
@@ -97,10 +146,13 @@ function setup() {
 // in the setup()
 function draw() {
     // draw the background image
-    if (frameCount % 1200 == 0) {
-        useNight = !useNight;
+    if (!useNight && frameCount % 1200 == 0) {
+        useNight = true;
     }
-    
+    else if (useNight && frameCount % 1200 == 0) {
+        useNight = false;
+    }    
+
     if (useNight) {
         image(bgNight, 0, 0, width, height);
     }
@@ -108,10 +160,16 @@ function draw() {
         image(bg, 0, 0, width, height);
     }
 
-    if (startGame) {
+    if (!startGame) { // got bug in slides
+        if (kb.presses('space') || mouse.presses()) {
+            startScreenLabel.visible = false;
+            startGame = true;
+            bird.collider = "dynamic";
+            bird.y = 200;
+        }
+    }
+    else {
         // 4.4 keyboard and mouse inputs
-        // teach OR condition, using || 2 pipe symbols
-        //
         if (kb.presses('space') || mouse.presses()) {
             bird.vel.y = -5;
             bird.sleeping = false; // wake up if fallen asleep
@@ -183,18 +241,7 @@ function draw() {
             gameoverLabel.x = camera.x;
 
             dieSound.play();
-            noLoop(); // stop draw() function // slide got error noloop() is written
-        }
-    }
-    else {
-        // if game has not started,
-        // wait for space key press or mouse clicked event
-        //
-        if (kb.presses('space') || mouse.presses()) {
-            startScreenLabel.visible = false;
-            startGame = true;
-            bird.collider = "dynamic";
-            bird.y = 200;
+            noLoop(); // stop draw() function
         }
     }
 }
