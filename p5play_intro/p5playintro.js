@@ -30,12 +30,13 @@ function setup() {
 
   // Create a bouncing ball sprite
   // write your codes here
-  ball = new Sprite();
+  ball = new Sprite(); // created with random color in constructor
   ball.x = 50;
   ball.y = 50;
   ball.vel.x = 7; // start with vel.x = 1
   ball.vel.y = 7; // start with vel.y = 1
   ball.diameter = 50;
+  // ball.collider = "dynamic"; // optional; cos default value is "dynamic"
 
   floor = new Sprite();
   floor.w = 200;

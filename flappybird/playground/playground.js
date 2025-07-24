@@ -203,6 +203,7 @@ function draw() {
 function spawnPipePair() {
     // this is the code for creating pipe sprites
     let gap = 70;
+    // take note of the code changes here, initially is height/2 then changed to height -250
     let midY = random(170, height -250); // random(min, max)
 
     // create the bottom pipe sprite

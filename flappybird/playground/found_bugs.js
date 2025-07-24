@@ -146,13 +146,10 @@ function setup() {
 // in the setup()
 function draw() {
     // draw the background image
-    if (!useNight && frameCount % 1200 == 0) {
-        useNight = true;
+    if (frameCount % 1200 == 0) {
+        useNight = !useNight;
     }
-    else if (useNight && frameCount % 1200 == 0) {
-        useNight = false;
-    }    
-
+    
     if (useNight) {
         image(bgNight, 0, 0, width, height);
     }
@@ -160,16 +157,10 @@ function draw() {
         image(bg, 0, 0, width, height);
     }
 
-    if (!startGame) { // got bug in slides
-        if (kb.presses('space') || mouse.presses()) {
-            startScreenLabel.visible = false;
-            startGame = true;
-            bird.collider = "dynamic";
-            bird.y = 200;
-        }
-    }
-    else {
+    if (startGame) {
         // 4.4 keyboard and mouse inputs
+        // teach OR condition, using || 2 pipe symbols
+        //
         if (kb.presses('space') || mouse.presses()) {
             bird.vel.y = -5;
             bird.sleeping = false; // wake up if fallen asleep
@@ -241,7 +232,18 @@ function draw() {
             gameoverLabel.x = camera.x;
 
             dieSound.play();
-            noLoop(); // stop draw() function
+            noLoop(); // stop draw() function // slide got error noloop() is written
+        }
+    }
+    else {
+        // if game has not started,
+        // wait for space key press or mouse clicked event
+        //
+        if (kb.presses('space') || mouse.presses()) {
+            startScreenLabel.visible = false;
+            startGame = true;
+            bird.collider = "dynamic";
+            bird.y = 200;
         }
     }
 }
@@ -250,6 +252,7 @@ function draw() {
 function spawnPipePair() {
     // this is the code for creating pipe sprites
     let gap = 70;
+    // take note of the code changes here, initially is height/2 then changed to height -250
     let midY = random(170, height -250); // random(min, max)
 
     // create the bottom pipe sprite

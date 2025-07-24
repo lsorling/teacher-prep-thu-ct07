@@ -1,3 +1,31 @@
+a lot of content
+
+ct07
+#1
+js function (with 0 parameter)
+
+#2
+bird moving right (similar to scratch)
+camera to lock on bird.x
+
+#3
+visual debugging is so cool 
+must teach text()
+
+#4
+if conditions to change bird img as animation with rotation
+
+
+lesson 6 will need more time to explain
+scrolling
+why game is weird now 
+
+also observe missing first set of pipes
+but nevermind
+-cos its used for teaching lesson 5
+it served a purpose
+
+explain % modulo symbol to find remainder when 2 numbers divide
 
 yeah i fixed my bug
 i had a line with bird.y = 200;
