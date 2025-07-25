@@ -1,1 +1,5 @@
 
+have a floor sprite
+with collider "static"
+
+have a ball sprite
