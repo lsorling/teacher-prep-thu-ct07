@@ -7,7 +7,9 @@ with collider "static"
 
 have a ball sprite
 with bounciness set to 1
-ball 
+ball set vel.x = 3 and vel.y = 3
+let it drop from ball.x = width/ 2 and ball.y = 0
+
 set world.gravity.y = 10
 
 must have empty draw() function
