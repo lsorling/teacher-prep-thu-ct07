@@ -4,4 +4,6 @@ need 2 sprites
 
 turn off world.gravity.y 
 
-if ball.bounc
+if ball.bounciness is not set, the ball bounce slower and slower 
+
+if floor is not 
