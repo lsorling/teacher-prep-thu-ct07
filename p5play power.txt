@@ -7,6 +7,8 @@ with collider "static"
 
 have a ball sprite
 with bounciness set to 1
-
+ball 
 set world.gravity.y = 10
 
+must have empty draw() function
+otherwise nothing is moving 
