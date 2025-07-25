@@ -4,3 +4,6 @@ with collider "static"
 
 have a ball sprite
 with bounciness set to 1
+
+set world.gravity.y = 10
+
