@@ -3,3 +3,4 @@ have a floor sprite
 with collider "static"
 
 have a ball sprite
+with bounciness set to 1
