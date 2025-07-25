@@ -6,4 +6,8 @@ turn off world.gravity.y
 
 if ball.bounciness is not set, the ball bounce slower and slower 
 
-if floor is not following mouse.y 
+if floor is not following mouse.y using floor.y
+then cannot catch the ball at all 
+
+
+in draw() function must add the if condition to check for bounds of 4 sides of walls
