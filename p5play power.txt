@@ -2,7 +2,6 @@ global variables section
 let ball;
 let floor;
 
-
 have a floor sprite
 with collider "static"
 
