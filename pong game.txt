@@ -1,3 +1,7 @@
 
 need 2 sprites
 
+
+turn off world.gravity.y 
+
+if ball.bounc
