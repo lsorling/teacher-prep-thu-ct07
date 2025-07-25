@@ -26,7 +26,7 @@ function setup() {
   let abc = new Sprite();
   abc.image = burgerImg;
   abc.image.scale = 0.25; // use this to scale down the image drawn
-  abc.collider = "static";
+  abc.collider = "none"; // there is this option too 
 
   // Create a bouncing ball sprite
   // write your codes here
