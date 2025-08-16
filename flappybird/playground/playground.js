@@ -51,6 +51,8 @@ function setup() {
     floor.collider = 'static';
     floor.img = base;
 
+    // for organising and managing pipes (obstacles)
+    pip
 }
 
 // forever block
