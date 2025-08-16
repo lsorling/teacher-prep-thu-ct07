@@ -14,7 +14,7 @@ function preload() {
 
     flapUpImg = loadImage('assets/yellowbird-upflap.png');
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
-    flapMidImg = loadImage('assets/yellowbird-downflap.png');
+    flapDownImg = loadImage('assets/yellowbird-downflap.png');
 }
 
 // run once like the "when green flag clicked"
