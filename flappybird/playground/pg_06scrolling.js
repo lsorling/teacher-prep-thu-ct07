@@ -96,8 +96,9 @@ function setup() {
 // must have this empty function if you have any new Sprite() code 
 // in the setup()
 function draw() {
+    image(bg, 0, 0, width, height);
+
     // draw the background image
-        image(bg, 0, 0, width, height);
     if (frameCount % 1200 == 0) useNight = !useNight;
     
     if (useNight) {
