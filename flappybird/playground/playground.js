@@ -63,18 +63,18 @@ function draw() {
         bird.sleeping = false; // wake up if fallen asleep
     }
 
-    if (bird.vel.y < -1) {
-        bird.img = flapUpImg;
-        bird.rotation = -30;
-    }
-    else if (bird.vel.y > 1) {
-        bird.img = flapDownImg;
-        bird.rotation = 30;
-    }
-    else {
+    // if (bird.vel.y < -1) {
+    //     bird.img = flapUpImg;
+    //     bird.rotation = -30;
+    // }
+    // else if (bird.vel.y > 1) {
+    //     bird.img = flapDownImg;
+    //     bird.rotation = 30;
+    // }
+    // else {
         bird.img = flapMidImg;
         bird.rotation = 0;
-    }
+    // }
 
     // if (mouse.presses()) {
     //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
