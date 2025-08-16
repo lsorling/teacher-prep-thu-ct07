@@ -104,7 +104,7 @@ function draw() {
     // when its night, use a night picture for the background
     if (useNight) image(bgNight, 0, 0, width, height);
 
-        if (kb.presses('space') || mouse.presses()) {
+    if (kb.presses('space') || mouse.presses()) {
         startScreenLabel.visible = false;
         startGame = true;
         bird.collider = "dynamic";
