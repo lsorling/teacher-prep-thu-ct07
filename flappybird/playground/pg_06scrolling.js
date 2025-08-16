@@ -101,7 +101,7 @@ function draw() {
 
     if (frameCount % 1200 == 0) useNight = !useNight;
     
-    if (useNight)        image(bgNight, 0, 0, width, height);
+    if (useNight) image(bgNight, 0, 0, width, height);
 
     if (!startGame) { // got bug in slides
         if (kb.presses('space') || mouse.presses()) {
