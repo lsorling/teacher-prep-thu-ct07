@@ -124,5 +124,6 @@ function spawnPipePair() {
     topPipe.rotation = 180; // upside down
 
     pipeGroup.add(bottomPipe);
+    pipeGroup.add(topPipe);
     pipeGroup.layer = 0; // go behind other sprites but on top of background image
 }
