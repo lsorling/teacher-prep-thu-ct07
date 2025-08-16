@@ -204,7 +204,7 @@ function spawnPipePair() {
     topPipe = new Sprite(bird.x + 400, midY - gap/2 -200, 52, 320, 'static');
     topPipe.img = pipe;
     topPipe.rotation = 180; // upside down
-    top
+    topPipe.passed = false; // only one of the pair needed this (since we are compare)
 
     pipeGroup.add(bottomPipe);
     pipeGroup.add(topPipe);
