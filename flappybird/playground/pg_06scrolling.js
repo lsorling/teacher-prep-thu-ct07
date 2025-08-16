@@ -109,7 +109,7 @@ function draw() {
         startGame = true;
         bird.collider = "dynamic";
     }
-    if (!startGame) { // got bug in slides
+    if (startGame) { 
 
     }
     else {
