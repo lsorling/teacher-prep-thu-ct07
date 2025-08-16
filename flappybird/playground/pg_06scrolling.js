@@ -100,7 +100,7 @@ function draw() {
     image(bg, 0, 0, width, height);
 
     if (frameCount % 1200 == 0) useNight = !useNight;
-    
+
     // when its night, use a night picture for the background
     if (useNight) image(bgNight, 0, 0, width, height);
 
@@ -109,7 +109,6 @@ function draw() {
             startScreenLabel.visible = false;
             startGame = true;
             bird.collider = "dynamic";
-            bird.y = 200;
         }
     }
     else {
