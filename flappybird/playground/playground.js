@@ -6,7 +6,7 @@ let bird, floor;
 let bg, base;
 let flapMidImg, flapUpImg, flapDownImg;
 
-let bottomPipe, topPipe;
+let pipeImg, bottomPipe, topPipe;
 let pipeGroup;
 
 // preload game assets like media and images
