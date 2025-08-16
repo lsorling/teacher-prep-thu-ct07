@@ -1,5 +1,4 @@
-// the final game
-
+// i am redoing from less
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
