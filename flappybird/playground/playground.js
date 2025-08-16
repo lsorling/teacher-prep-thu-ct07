@@ -88,3 +88,8 @@ function draw() {
     text('moving: ' + bird.isMoving, 10, 40);
     text('is sleeping: ' + bird.sleeping, 10, 60);
 }
+
+// custom function
+function spawnPipePair() {
+    
+}
