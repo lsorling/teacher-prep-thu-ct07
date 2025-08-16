@@ -107,12 +107,10 @@ function draw() {
     if (kb.presses('space') || mouse.presses()) {
         startScreenLabel.visible = false;
         startGame = true;
-        bird.collider = "dynamic";
     }
     if (startGame) { 
+        bird.collider = "dynamic";
 
-    }
-    else {
         // 4.4 keyboard and mouse inputs
         if (kb.presses('space') || mouse.presses()) {
             bird.vel.y = -5;
