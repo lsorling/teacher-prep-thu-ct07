@@ -6,6 +6,9 @@ let bird, floor;
 let bg, base;
 let flapMidImg, flapUpImg, flapDownImg;
 
+let bottomPipe, topPipe;
+let pipeGroup;
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
