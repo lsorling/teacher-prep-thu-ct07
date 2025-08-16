@@ -109,6 +109,7 @@ function spawnPipePair() {
     bottomPipe.img = pipeImg;
     pipeGroup.add(bottomPipe);
 
-    topPipe = new S
+    topPipe = new Sprite();
+    t
     pipeGroup.layer = 0;
 }
