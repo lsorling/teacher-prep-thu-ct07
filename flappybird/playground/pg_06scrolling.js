@@ -97,13 +97,8 @@ function setup() {
 // in the setup()
 function draw() {
     // draw the background image
-    if (frameCount % 1200 == 0) {
-        useNight = !useNight;
-    }
-    else if (useNight && frameCount % 1200 == 0) {
-        useNight = false;
-    }    
-
+    if (frameCount % 1200 == 0) useNight = !useNight;
+    
     if (useNight) {
         image(bgNight, 0, 0, width, height);
     }
