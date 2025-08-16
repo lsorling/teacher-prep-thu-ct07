@@ -19,7 +19,7 @@ function preload() {
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
     flapDownImg = loadImage('assets/yellowbird-downflap.png');
 
-    pipeImg = loadImage('assets/');
+    pipeImg = loadImage('assets/pipe-green.png');
 }
 
 // run once like the "when green flag clicked"
