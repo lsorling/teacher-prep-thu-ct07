@@ -19,6 +19,7 @@ function preload() {
     flapMidImg = loadImage('assets/yellowbird-midflap.png');
     flapDownImg = loadImage('assets/yellowbird-downflap.png');
 
+    // inspect picture note width and height
     pipeImg = loadImage('assets/pipe-green.png');
 }
 
