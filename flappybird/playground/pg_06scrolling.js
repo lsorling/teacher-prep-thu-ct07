@@ -109,8 +109,10 @@ function draw() {
         startScreenLabel.visible = false;
         startGame = true;
     }
+    
     if (startGame) { 
         bird.collider = "dynamic";
+        bird.visible = true;
 
         // 4.4 keyboard and mouse inputs
         if (kb.presses('space') || mouse.presses()) {
