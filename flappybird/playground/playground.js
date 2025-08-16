@@ -108,5 +108,7 @@ function spawnPipePair() {
     bottomPipe = new Sprite(400, midY+200, 52, 320, 'static');
     bottomPipe.img = pipeImg;
     pipeGroup.add(bottomPipe);
+
+    topPipe = new S
     pipeGroup.layer = 0;
 }
