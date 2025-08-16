@@ -76,6 +76,10 @@ function draw() {
         bird.rotation = 0;
     }
 
+    if (frameCount === 1) {
+        spawnPipePair();
+    }
+
     // if (mouse.presses()) {
     //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
     //     abc.bounciness = 1; // to better understand physics, so fun to watch
@@ -91,5 +95,5 @@ function draw() {
 
 // custom function
 function spawnPipePair() {
-    
+
 }
