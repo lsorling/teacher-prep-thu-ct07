@@ -209,13 +209,15 @@ function spawnPipePair() {
     // create the bottom pipe sprite
     bottomPipe = new Sprite(bird.x + 400, midY + gap/2 +200, 52, 320, 'static');
     bottomPipe.img = pipe;
+    
     pipeGroup.add(bottomPipe);
 
     // now the top pipe sprite
     topPipe = new Sprite(bird.x + 400, midY - gap/2 -200, 52, 320, 'static');
     topPipe.img = pipe;
     topPipe.rotation = 180; // upside down
-    pipeGroup.add(bottomPipe);
+
+    pipeGroup.add(topPipe);
 
     pipeGroup.layer = 0; // go behind other sprites but on top of background image
 }
