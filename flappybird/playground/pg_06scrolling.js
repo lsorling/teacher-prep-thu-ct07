@@ -109,7 +109,7 @@ function draw() {
         startScreenLabel.visible = false;
         startGame = true;
     }
-    
+
     if (startGame) { 
         bird.collider = "dynamic";
         bird.visible = true;
@@ -206,5 +206,7 @@ function spawnPipePair() {
     topPipe.rotation = 180; // upside down
 
     pipeGroup.add(bottomPipe);
+    pipeGroup.add(bottomPipe);
+
     pipeGroup.layer = 0; // go behind other sprites but on top of background image
 }
