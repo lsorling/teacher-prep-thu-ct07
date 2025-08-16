@@ -83,7 +83,9 @@ function draw() {
         bird.rotation = 0;
     }
 
-    // 
+    // they didnt do this
+    // so start here
+    // explain frameCount - note spelling
     if (frameCount === 1) {
         spawnPipePair();
     }
