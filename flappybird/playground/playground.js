@@ -1,8 +1,10 @@
-// i am redoing from less
+// i am redoing from lesson 04 with sprite
+// with keyboard
+
 // the global variables section
 let bird, floor;
 let flapMidImg, bg, base;
-
+let 
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
