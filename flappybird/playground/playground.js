@@ -52,7 +52,7 @@ function setup() {
     floor.img = base;
 
     // for organising and managing pipes (obstacles)
-    pip
+    pipeGroup = new Group();
 }
 
 // forever block
