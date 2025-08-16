@@ -91,6 +91,8 @@ function draw() {
         spawnPipePair();
     }
 
+    // cleanup of pipes only if bird starts moving
+    // and 
     // if (mouse.presses()) {
     //     let abc = new Sprite(mouse.x, 200, 30, 30, 'dynamic'); // create a new sprite
     //     abc.bounciness = 1; // to better understand physics, so fun to watch
