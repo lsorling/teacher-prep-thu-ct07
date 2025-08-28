@@ -15,3 +15,6 @@ to two digits
 to three digits
 
 can it be centered?
+
+i have no time to check next set of slides for next game
+-week 8 to week 13 (predicted)
