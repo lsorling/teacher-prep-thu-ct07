@@ -16,6 +16,8 @@ added game start messsage
 in the middle of the canvas - width/2
 follow the camera, then use sprite.x = camera.x
 
+end of class
+
 ##############################################
 
 a lot of content
