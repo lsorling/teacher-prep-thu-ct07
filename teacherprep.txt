@@ -13,7 +13,8 @@ added game over message
 display sprite as label using collider as "none"
 
 added game start messsage
-in
+in the middle of the canvas - width/2
+follow the camera, then use sprite.x = camera.x
 
 ##############################################
 
