@@ -6,6 +6,9 @@ week 9 (next week)
 week 8 (mid-sem assessment)
 
 with one hour to spare 
+we continued with lesson 6 slides
+stopped at collision and noLoop()
+
 
 
 ##############################################
