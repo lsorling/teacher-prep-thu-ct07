@@ -9,7 +9,11 @@ with one hour to spare
 we continued with lesson 6 slides
 stopped at collision and noLoop()
 
+added game over message
+display sprite as label using collider as "none"
 
+added game start messsage
+in
 
 ##############################################
 
