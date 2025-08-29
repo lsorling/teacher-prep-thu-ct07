@@ -2,7 +2,11 @@
 
 week 9 (next week)
 
-can start on d
+can start on display score
+but do lesson recap first
+
+
+
 ##############################################
 
 week 8 (mid-sem assessment)
