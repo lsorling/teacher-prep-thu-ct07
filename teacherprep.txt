@@ -2,6 +2,7 @@
 
 week 9 (next week)
 
+##############################################
 
 week 8 (mid-sem assessment)
 
@@ -19,6 +20,8 @@ follow the camera, then use sprite.x = camera.x
 end of class
 
 ##############################################
+
+
 
 a lot of content
 
