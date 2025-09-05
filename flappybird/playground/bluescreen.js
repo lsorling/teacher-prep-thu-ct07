@@ -18,11 +18,7 @@ function setup() {
     new Canvas(400,600);
     background("steelblue");
 
-    scoreSprite = new Sprite();
-    scoreSprite.w = 24;
-    scoreSprite.h = 36;
-    scoreSprite.collider = "none";
-    scoreSprite.img = digitImgs[0];
+    scoreGroup = new Group();
 }
 
 function draw() {
