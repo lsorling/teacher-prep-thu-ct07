@@ -4,6 +4,12 @@ let digitImgs = [];
 let scoreSprite;
 let scoreGroup;
 
+function preload() {
+    for (let count =0; count<10; count++) {
+        
+    }
+}
+
 function setup() {
     new Canvas(400,600);
     background("steelblue");
