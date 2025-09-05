@@ -225,7 +225,6 @@ function draw() {
             setTimeout(() => {
                 console.log("This message appears after 1 second.");
             }, 1000);
-
         }
 
         // 7.2 increase score
