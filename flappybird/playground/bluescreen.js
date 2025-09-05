@@ -19,6 +19,7 @@ function setup() {
     background("steelblue");
 
     scoreGroup = new Group();
+    scoreGroup.
 }
 
 function draw() {
