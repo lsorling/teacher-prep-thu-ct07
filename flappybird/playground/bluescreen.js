@@ -1,7 +1,7 @@
 // variables
 
 function setup() {
-    new c
+    new Canvas(400,600);
     background("steelblue");
 }
 
