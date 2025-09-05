@@ -228,9 +228,9 @@ function draw() {
             let rightEdgePipe = pipe.x - pipe.w/2;
 
             if ( pipe.passed === false && leftEdgeBird > rightEdgePipe ) {
+                pointSound.play();
                 pipe.passed = true; // dont count again
                 score++;
-                pointSound.play();
             }
         }
         // draw score and keep it in the center
