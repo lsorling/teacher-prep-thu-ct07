@@ -1,7 +1,7 @@
 week 10 (next week)
 
 still have 2 set of slides
-07-
+07-start screen, display score
 08-sound effects, game restart
 
 ##############################################
