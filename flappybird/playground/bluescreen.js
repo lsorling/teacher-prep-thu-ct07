@@ -7,7 +7,8 @@ let scoreGroup;
 function preload() {
     let prefix = "assets/";
     let postfix = ".png";
-    let filename;
+    let filename = "";
+
     for (let count =0; count<10; count++) {
         filename = prefix + count + postfix;
         digitImgs[count] = filename;
@@ -22,6 +23,7 @@ function setup() {
     scoreSprite.w = 24;
     scoreSprite.h = 36;
     scoreSprite.collider = "none";
+    s
 }
 
 function draw() {
