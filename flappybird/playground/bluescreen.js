@@ -47,7 +47,7 @@ function displayScore() {
 
     text("array: "+ scoreArray, 20, 70);
     for (let one of scoreArray) {
-        let one
+        let onedigit = new scoreGroup.Sprite()
     }
 }
 
