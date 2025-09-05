@@ -230,6 +230,7 @@ function draw() {
             if ( pipe.passed === false && leftEdgeBird > rightEdgePipe ) {
                 pipe.passed = true; // dont count again
                 score++;
+                pointSound.play();
             }
         }
         // draw score and keep it in the center
