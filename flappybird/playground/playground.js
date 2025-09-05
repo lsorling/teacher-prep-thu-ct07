@@ -240,7 +240,7 @@ function draw() {
                 bird.visible = false;
 
                 startScreenLabel.visible = true;
-                sta
+                startScreenLabel.x = bird.x; // follow the bird
                 gameoverLabel.remove();
                 
             }, 3000);
