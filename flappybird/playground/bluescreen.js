@@ -42,7 +42,9 @@ function displayScore() {
     scoreGroup.removeAll();
 
     let scoreString = str(score);
-    let scoreArray = s
+    let scoreArray = scoreString.split("");
+
+    text("array: "+ scoreArray, 20, 70)
 }
 
 /*
