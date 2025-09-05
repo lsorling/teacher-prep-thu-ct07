@@ -257,7 +257,7 @@ function displayScore() {
 
     text("array: "+ scoreArray, 10, 100);
     for (let one of scoreArray) {
-        let onedigit = new scoreGroup.Sprite(middle+offset, height/2, 24, 36);
+        let onedigit = new scoreGroup.Sprite(middle+offset, 25, 24, 36);
         onedigit.img = digitImgs[one];
         offset = offset + 25;
     }
