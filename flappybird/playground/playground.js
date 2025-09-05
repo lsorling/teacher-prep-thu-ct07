@@ -204,6 +204,9 @@ function draw() {
             dieSound.play();
             noLoop(); // stop draw() function // slide got error noloop() is written
         }
+
+        displayScore();
+
     }
     else {
         // if game has not started,
