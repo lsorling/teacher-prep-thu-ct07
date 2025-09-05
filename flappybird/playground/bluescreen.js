@@ -50,7 +50,7 @@ function displayScore() {
 
     text("array: "+ scoreArray, 20, 70);
     for (let one of scoreArray) {
-        let onedigit = new scoreGroup.Sprite(x,y,w,h);
+        let onedigit = new scoreGroup.Sprite(middle,height/2,w,h);
         onedigit.img = digitImgs[one];
         offset = offset + 25;
     }
