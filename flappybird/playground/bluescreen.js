@@ -5,6 +5,8 @@ let scoreSprite;
 let scoreGroup;
 
 function preload() {
+    let prefix = "assets/";
+    let postfix = "."
     for (let count =0; count<10; count++) {
         
     }
