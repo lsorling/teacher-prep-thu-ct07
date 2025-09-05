@@ -45,10 +45,14 @@ function displayScore() {
     let scoreString = str(score);
     let scoreArray = scoreString.split("");
 
+    let offset = 0;
+    let middle = width/2;
+
     text("array: "+ scoreArray, 20, 70);
     for (let one of scoreArray) {
         let onedigit = new scoreGroup.Sprite(x,y,w,h);
         onedigit.img = digitImgs[one];
+        offset = offset + 25;
     }
 }
 
