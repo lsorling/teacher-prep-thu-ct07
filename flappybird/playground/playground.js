@@ -57,6 +57,15 @@ function preload() {
 
     flapSound = createAudio('assets/sfx_wing.mp3');
     dieSound = createAudio('assets/sfx_die.mp3');
+
+    let prefix = "assets/";
+    let postfix = ".png";
+    let filename = "";
+
+    for (let count =0; count<10; count++) {
+        filename = prefix + count + postfix;
+        digitImgs[count] = filename;
+    }
 }
 
 // run once like the "when green flag clicked"
