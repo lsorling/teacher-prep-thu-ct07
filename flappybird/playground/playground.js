@@ -214,7 +214,7 @@ function draw() {
         // 6.2 detect collision
         if (bird.collides(pipeGroup) || bird.collides(floor)) {
             gameoverLabel = new Sprite();
-            ga
+            gameoverLabel.collider = "none"; // non-interacting with other sprite
             gameoverLabel.x = camera.x;
             gameoverLabel.img = gameoverImg;
             gameoverLabel.layer = 100; // come to front most layer
