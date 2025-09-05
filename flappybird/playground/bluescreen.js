@@ -39,7 +39,7 @@ function draw() {
 }
 
 function displayScore() {
-    s
+    
 }
 
 /*
