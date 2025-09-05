@@ -241,7 +241,7 @@ function spawnPipePair() {
     pipeGroup.layer = 0; // go behind other sprites but on top of background image
 }
 
-
+// 7.2 display score
 function displayScore() {
     scoreGroup.removeAll();
 
