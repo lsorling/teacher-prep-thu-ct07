@@ -214,9 +214,9 @@ function draw() {
         // 6.2 detect collision
         if (bird.collides(pipeGroup) || bird.collides(floor)) {
             gameoverLabel = new Sprite(width/2, height/2, 192, 42);
+            gameoverLabel.x = camera.x;
             gameoverLabel.img = gameoverImg;
             gameoverLabel.layer = 100; // come to front most layer
-            gameoverLabel.x = camera.x;
 
             dieSound.play();
             noLoop(); // stop draw() function // slide got error noloop() is written
