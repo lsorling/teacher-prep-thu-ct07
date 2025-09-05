@@ -200,9 +200,10 @@ function draw() {
             // every 1.5 second
             spawnPipePair();
         }
-        // cleanup
+        
+        // cleanup for performance
         for (let pipe of pipeGroup) {
-            // why 200+2
+            // why 200+25?
             if ((camera.x-pipe.x) > 200+25) { // fixed the bug
                 pipe.remove();
             }
