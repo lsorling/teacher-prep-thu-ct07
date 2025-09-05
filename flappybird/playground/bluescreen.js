@@ -19,7 +19,7 @@ function setup() {
     background("steelblue");
 
     scoreGroup = new Group();
-    scoreGroup.
+    scoreGroup.layer = 1000; // frontmost layer
 }
 
 function draw() {
