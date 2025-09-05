@@ -24,5 +24,5 @@ week 9
 sebastian tell me, teacher my codes not working again
 his game over has multiple game over images, and pipes still coming
 
-solution: add a noLoop(); statement once game over label is v
+solution: add a noLoop(); statement once game over label is created and visible.
 */
