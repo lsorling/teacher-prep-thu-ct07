@@ -128,6 +128,16 @@ function draw() {
         image(bg, 0, 0, width, height);
     }
 
+        // if game has not started,
+        // wait for space key press or mouse clicked event
+        //
+        if (kb.presses('space') || mouse.presses()) {
+            startScreenLabel.visible = false;
+            startGame = true;
+            bird.collider = "dynamic";
+            bird.y = 200;
+        }
+        
     if (startGame) {
         // 4.4 keyboard and mouse inputs
         // teach OR condition, using || 2 pipe symbols
@@ -219,15 +229,6 @@ function draw() {
     }
     else {
         
-        // if game has not started,
-        // wait for space key press or mouse clicked event
-        //
-        if (kb.presses('space') || mouse.presses()) {
-            startScreenLabel.visible = false;
-            startGame = true;
-            bird.collider = "dynamic";
-            bird.y = 200;
-        }
     }
 }
 
