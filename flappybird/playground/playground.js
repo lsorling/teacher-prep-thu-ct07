@@ -135,7 +135,6 @@ function draw() {
         startScreenLabel.visible = false;
         startGame = true;
         bird.collider = "dynamic";
-        bird.y = 200;
     }
 
     if (startGame) {
