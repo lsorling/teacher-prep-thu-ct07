@@ -242,7 +242,6 @@ function draw() {
 
                 startScreenLabel.visible = true;
                 startScreenLabel.x = bird.x; // follow the bird
-                startScreenLabel.layer = 1001;
                 gameoverLabel.remove();
                 loop();
                 
