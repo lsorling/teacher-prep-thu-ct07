@@ -253,7 +253,7 @@ function displayScore() {
 
     //let offset = 0;
     let offset = 0 - (scoreArray.length-1)*25/2;
-    let middle = width/2;
+    let middle = camera.x;
 
     text("array: "+ scoreArray, 10, 100);
     for (let one of scoreArray) {
