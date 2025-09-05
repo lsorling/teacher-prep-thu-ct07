@@ -197,10 +197,10 @@ function draw() {
         floor.x = bird.x; // lock the floor to the bird's pos
 
         if (frameCount % 150 === 0) {
-            // every 1.5 second
+            // every 2.5 second
             spawnPipePair();
         }
-        
+
         // cleanup for performance
         for (let pipe of pipeGroup) {
             // why 200+25?
