@@ -223,7 +223,7 @@ function draw() {
             dieSound.play();
             noLoop(); // stop draw() function // slide got error noloop() is written
 
-            // 8.2 
+            // 8.2 game can restart back
             setTimeout(() => {
                 //console.log("This message appears after 3 seconds.");
 
