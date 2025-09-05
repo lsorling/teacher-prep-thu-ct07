@@ -208,6 +208,9 @@ function draw() {
         for (let pipe of pipeGroup) {
             let leftEdgeBird;
             let rightEdgePipe;
+            if ( pipe.passed === false && leftEdgeBird > rightEdgePipe ) {
+                score
+            }
         }
         displayScore();
 
