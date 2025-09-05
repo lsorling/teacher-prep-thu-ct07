@@ -228,6 +228,7 @@ function draw() {
                 score++;
             }
         }
+        // draw score and keep it in the center
         displayScore();
     }
 
