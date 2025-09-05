@@ -36,14 +36,13 @@ function draw() {
         score--;
     }
     score = constrain(score,0,9);
-    scoreSprite.img = digitImgs[score];
     
     textSize(16);
     text("score: " + score, 20, 50);
 }
 
 function displayScore() {
-
+    scoreSprite.img = digitImgs[score];
 }
 
 /*
