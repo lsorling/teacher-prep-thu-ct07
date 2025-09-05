@@ -183,7 +183,7 @@ function draw() {
         camera.x = bird.x; // lock the camera on the bird's pos
         floor.x = bird.x; // lock the floor to the bird's pos
 
-        if (frameCount % 180 === 0) {
+        if (frameCount % 150 === 0) {
             // every 1.5 second
             spawnPipePair();
         }
