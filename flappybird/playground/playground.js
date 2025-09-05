@@ -224,9 +224,14 @@ function draw() {
             noLoop(); // stop draw() function // slide got error noloop() is written
             setTimeout(() => {
                 //console.log("This message appears after 3 seconds.");
-                
+
                 startGame = false;
                 score = 0;
+
+                // remove all the pipes
+                pipeGroup.removeAll();
+
+                startScreenLabel.v
                 
             }, 3000);
         }
