@@ -27,6 +27,7 @@ let startGame = false;
 // sound assets
 let flapSound;
 let dieSound;
+let pointSound;
 
 // 7.2 display score using digits
 let score = 0;
