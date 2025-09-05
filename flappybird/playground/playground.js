@@ -150,7 +150,7 @@ function draw() {
         if (kb.presses('space') || mouse.presses()) {
             bird.vel.y = -5;
             bird.sleeping = false; // wake up if fallen asleep
-            //flapSound.play();
+            flapSound.play();
         }
 
         // if (mouse.presses()) {
