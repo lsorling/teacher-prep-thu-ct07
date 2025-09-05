@@ -33,6 +33,7 @@ function draw() {
         score--;
     }
     score = constrain(score,0,99);
+    displayScore();
     
     textSize(16);
     text("score: " + score, 20, 50);
