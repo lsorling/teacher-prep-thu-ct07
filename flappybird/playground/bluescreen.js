@@ -39,6 +39,7 @@ function draw() {
 }
 
 function displayScore() {
+    scoreGroup.removeAll();
     
 }
 
