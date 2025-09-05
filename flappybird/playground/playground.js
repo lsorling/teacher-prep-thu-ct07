@@ -140,6 +140,7 @@ function draw() {
 
     if (startGame) {
         bird.collider = "dynamic";
+        bird.visible = true;
 
         // 4.4 keyboard and mouse inputs
         // teach OR condition, using || 2 pipe symbols
