@@ -23,7 +23,7 @@ function setup() {
     scoreSprite.w = 24;
     scoreSprite.h = 36;
     scoreSprite.collider = "none";
-    s
+    scoreSprite.img = digitImgs[0];
 }
 
 function draw() {
