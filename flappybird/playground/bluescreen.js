@@ -48,7 +48,7 @@ function displayScore() {
     let scoreString = str(score);
     let scoreArray = scoreString.split("");
 
-    let offset = 0;
+    //let offset = 0;
     let offset = 0 - (scoreArray.length-1)*25/2;
     let middle = width/2;
 
