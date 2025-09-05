@@ -6,7 +6,7 @@ week 9 (4-sep)
 can start on display score
 but do lesson recap first
 
-
+stopped at sprite group, didnt add sprite to sprite group yet
 
 ##############################################
 
