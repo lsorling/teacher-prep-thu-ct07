@@ -209,10 +209,10 @@ function draw() {
             let leftEdgeBird;
             let rightEdgePipe;
             if ( pipe.passed === false && leftEdgeBird > rightEdgePipe ) {
-                score
+                score++;
+                displayScore();
             }
         }
-        displayScore();
 
     }
     else {
