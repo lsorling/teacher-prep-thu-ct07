@@ -223,8 +223,8 @@ function draw() {
             dieSound.play();
             noLoop(); // stop draw() function // slide got error noloop() is written
             setTimeout(() => {
-                console.log("This message appears after 1 second.");
-            }, 1000);
+                //console.log("This message appears after 3 seconds.");
+            }, 3000);
         }
 
         // 7.2 increase score
