@@ -28,6 +28,12 @@ let startGame = false;
 let flapSound;
 let dieSound;
 
+// 7.2 display score digits
+let score = 0;
+let digitImgs = [];
+let scoreGroup;
+
+
 // preload game assets like media and images
 function preload() {
     // bird image, background image, and the floor
