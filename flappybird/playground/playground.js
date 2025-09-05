@@ -205,6 +205,8 @@ function draw() {
             noLoop(); // stop draw() function // slide got error noloop() is written
         }
 
+        for (let pipe of pipeGroup) {
+        }
         displayScore();
 
     }
