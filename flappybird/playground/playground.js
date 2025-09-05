@@ -232,6 +232,7 @@ function draw() {
                 pipeGroup.removeAll();
 
                 startScreenLabel.visible = true;
+                gameoverLabel.remove();
                 
             }, 3000);
         }
