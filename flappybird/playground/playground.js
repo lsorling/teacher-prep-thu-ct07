@@ -56,7 +56,7 @@ function preload() {
     // 7.1 start screen
     startScreenImg = loadImage('assets/message.png');
 
-    flapSound = createAudio('assets/sfx_wing.mp3');
+    flapSound =  createAudio('assets/sfx_wing.mp3');
     dieSound =   createAudio('assets/sfx_die.mp3');
     pointSound = createAudio('assets/sfx_point.mp3');
 
