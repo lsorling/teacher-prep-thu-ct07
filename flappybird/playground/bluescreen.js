@@ -6,9 +6,9 @@ let scoreGroup;
 
 function preload() {
     let prefix = "assets/";
-    let postfix = "."
+    let postfix = ".png";
     for (let count =0; count<10; count++) {
-        
+        filename = prefix + count + postfix
     }
 }
 
