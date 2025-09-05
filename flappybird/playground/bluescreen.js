@@ -1,7 +1,6 @@
 // variables
 let score = 0;
 let digitImgs = [];
-let scoreSprite;
 let scoreGroup;
 
 function preload() {
