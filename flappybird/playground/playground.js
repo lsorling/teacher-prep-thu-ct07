@@ -218,6 +218,7 @@ function draw() {
             noLoop(); // stop draw() function // slide got error noloop() is written
         }
 
+        // 7.2
         for (let pipe of pipeGroup) {
             let leftEdgeBird = bird.x - bird.w/2;
             let rightEdgePipe = pipe.x - pipe.w/2;
