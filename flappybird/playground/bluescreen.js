@@ -35,7 +35,7 @@ function draw() {
     else if ( kb.presses("3") ) {
         score = 888;
     }
-    score = constrain(score,0,99);
+    score = constrain(score,0,999);
     displayScore();
     
     textSize(16);
