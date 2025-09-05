@@ -232,6 +232,10 @@ function draw() {
                 pipeGroup.removeAll();
 
                 // where is the bird?
+                bird.vel.x = 0;
+                bird.vel.y = 0;
+                bird.collider = "static";
+                bird.y = 200; // lift it up again in case its on the floor
 
                 startScreenLabel.visible = true;
                 gameoverLabel.remove();
