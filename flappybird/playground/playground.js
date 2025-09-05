@@ -58,6 +58,7 @@ function preload() {
 
     flapSound = createAudio('assets/sfx_wing.mp3');
     dieSound = createAudio('assets/sfx_die.mp3');
+    pointSound = createAudio('assets/sfx_die.mp3');
 
     let prefix = "assets/";
     let postfix = ".png";
