@@ -243,7 +243,8 @@ function draw() {
                 startScreenLabel.visible = true;
                 startScreenLabel.x = bird.x; // follow the bird
                 gameoverLabel.remove();
-                loop();
+
+                loop(); // resume the game loop
                 
             }, 3000);
         }
