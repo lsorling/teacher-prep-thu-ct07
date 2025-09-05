@@ -11,6 +11,9 @@ function setup() {
 function draw() {
     background("steelblue");
 
+    if ( kb.presses("up") ) {
+        
+    }
     textSize(16);
     text("score: " + score, 20, 50);
 }
