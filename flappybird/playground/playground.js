@@ -202,7 +202,7 @@ function draw() {
         }
         // cleanup
         for (let pipe of pipeGroup) {
-            if ((camera.x-pipe.x) > 500) { // fixed the bug
+            if ((camera.x-pipe.x) > 300+25) { // fixed the bug
                 pipe.remove();
             }
         }
