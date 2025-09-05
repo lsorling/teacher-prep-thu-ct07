@@ -1,6 +1,7 @@
 // variables
 let score;
-let score
+let digitImgs = [];
+let scoreGroup;
 
 function setup() {
     new Canvas(400,600);
