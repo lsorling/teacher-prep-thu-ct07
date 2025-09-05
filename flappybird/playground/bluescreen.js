@@ -11,4 +11,7 @@ function setup() {
 function draw() {
 
 }
-function displayScore(){}
+
+function displayScore() {
+
+}
