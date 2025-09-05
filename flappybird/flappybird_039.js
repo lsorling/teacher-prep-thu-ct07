@@ -46,7 +46,7 @@ function preload() {
     // 6.2
     gameoverImg = loadImage('assets/gameover.png');
 
-    // 6.3 start screen
+    // 7.1 start screen
     startScreenImg = loadImage('assets/message.png');
 
     flapSound = createAudio('assets/sfx_wing.mp3');
