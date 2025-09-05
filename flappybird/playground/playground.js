@@ -240,3 +240,22 @@ function spawnPipePair() {
 
     pipeGroup.layer = 0; // go behind other sprites but on top of background image
 }
+
+
+function displayScore() {
+    scoreGroup.removeAll();
+
+    let scoreString = str(score);
+    let scoreArray = scoreString.split("");
+
+    //let offset = 0;
+    let offset = 0 - (scoreArray.length-1)*25/2;
+    let middle = width/2;
+
+    text("array: "+ scoreArray, 20, 70);
+    for (let one of scoreArray) {
+        let onedigit = new scoreGroup.Sprite(middle+offset, height/2, 24, 36);
+        onedigit.img = digitImgs[one];
+        offset = offset + 25;
+    }
+}
