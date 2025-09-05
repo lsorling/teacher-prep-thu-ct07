@@ -39,7 +39,7 @@ function draw() {
 }
 
 function displayScore() {
-    scoreSprite.img = digitImgs[score];
+    s
 }
 
 /*
