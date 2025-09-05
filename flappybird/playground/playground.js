@@ -102,11 +102,12 @@ function setup() {
     // 5.3 pipes group
     pipeGroup = new Group();
 
-    // 6.3 start screen
+    // 7.1 start screen
     startScreenLabel = new Sprite(width/2, height/2, 50, 50, 'none');
     startScreenLabel.img = startScreenImg;
 
-        scoreGroup = new Group();
+    // 7.2 display score
+    scoreGroup = new Group();
     scoreGroup.collider = "none"; // non-interacting with other sprites like player or pipes
     scoreGroup.layer = 1000; // frontmost layer
 }
