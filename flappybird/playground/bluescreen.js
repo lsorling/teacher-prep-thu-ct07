@@ -32,7 +32,7 @@ function draw() {
     else if ( kb.presses("down") ) {
         score--;
     }
-    score = constrain(score,0,9);
+    score = constrain(score,0,99);
     
     textSize(16);
     text("score: " + score, 20, 50);
