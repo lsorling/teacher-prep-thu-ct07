@@ -236,6 +236,7 @@ function draw() {
                 bird.vel.y = 0;
                 bird.collider = "static";
                 bird.y = 200; // lift it up again in case its on the floor
+                bird.rotation = 0;
                 bird.visible = false;
 
                 startScreenLabel.visible = true;
