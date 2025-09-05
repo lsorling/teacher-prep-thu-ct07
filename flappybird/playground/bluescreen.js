@@ -1,5 +1,5 @@
 // variables
-let score;
+let score = 0;
 let digitImgs = [];
 let scoreGroup;
 
@@ -11,3 +11,4 @@ function setup() {
 function draw() {
 
 }
+function displayScore(){}
