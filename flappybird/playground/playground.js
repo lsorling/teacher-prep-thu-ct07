@@ -214,7 +214,7 @@ function draw() {
         // 6.2 detect collision
         if (bird.collides(pipeGroup) || bird.collides(floor)) {
             gameoverLabel = new Sprite();
-            // slide got error, without this line, the gameoverLabel
+            // slide got error, without this line, the gameoverLabel collides with the bird
             gameoverLabel.collider = "none"; // non-interacting with other sprite
             gameoverLabel.x = camera.x;
             gameoverLabel.img = gameoverImg;
