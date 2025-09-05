@@ -218,6 +218,7 @@ function draw() {
 
     }
     else {
+        
         // if game has not started,
         // wait for space key press or mouse clicked event
         //
