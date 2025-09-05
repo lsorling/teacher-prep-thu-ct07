@@ -225,11 +225,8 @@ function draw() {
             }
         }
         displayScore();
+    }
 
-    }
-    else {
-        
-    }
 }
 
 // 5.3 pipes group
