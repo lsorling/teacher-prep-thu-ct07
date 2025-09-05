@@ -206,7 +206,8 @@ function draw() {
         }
 
         for (let pipe of pipeGroup) {
-            let leftEdgeBird
+            let leftEdgeBird;
+            let rightEdgePipe;
         }
         displayScore();
 
