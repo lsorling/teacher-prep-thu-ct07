@@ -231,7 +231,7 @@ function draw() {
                 // remove all the pipes
                 pipeGroup.removeAll();
 
-                startScreenLabel.v
+                startScreenLabel.visible = true;
                 
             }, 3000);
         }
