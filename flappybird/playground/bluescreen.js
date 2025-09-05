@@ -32,6 +32,7 @@ function draw() {
     else if ( kb.presses("down") ) {
         score--;
     }
+    else if ( kb.pre)
     score = constrain(score,0,99);
     displayScore();
     
