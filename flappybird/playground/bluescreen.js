@@ -44,7 +44,7 @@ function displayScore() {
     let scoreString = str(score);
     let scoreArray = scoreString.split("");
 
-    text("array: "+ scoreArray, 20, 70)
+    text("array: "+ scoreArray, 20, 70);
 }
 
 /*
