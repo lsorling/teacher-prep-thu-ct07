@@ -227,7 +227,7 @@ function draw() {
 
                 startGame = false;
                 score = 0;
-                scoreGroup.r
+                scoreGroup.removeAll();
 
                 // remove all the pipes
                 pipeGroup.removeAll();
