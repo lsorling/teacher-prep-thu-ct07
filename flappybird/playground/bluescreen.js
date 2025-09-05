@@ -46,6 +46,9 @@ function displayScore() {
     let scoreArray = scoreString.split("");
 
     text("array: "+ scoreArray, 20, 70);
+    for (let one of scoreArray) {
+        let one
+    }
 }
 
 /*
