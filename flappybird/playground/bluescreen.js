@@ -19,6 +19,7 @@ function setup() {
     background("steelblue");
 
     scoreGroup = new Group();
+    scoreGroup.collider = "none"; // non-interacting with other sprites like player or pipes
     scoreGroup.layer = 1000; // frontmost layer
 }
 
