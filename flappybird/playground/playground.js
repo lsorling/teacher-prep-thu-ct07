@@ -231,6 +231,8 @@ function draw() {
                 // remove all the pipes
                 pipeGroup.removeAll();
 
+                // where is the bird?
+
                 startScreenLabel.visible = true;
                 gameoverLabel.remove();
                 
