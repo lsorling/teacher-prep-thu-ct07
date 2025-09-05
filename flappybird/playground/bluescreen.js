@@ -6,6 +6,8 @@ let scoreGroup;
 function setup() {
     new Canvas(400,600);
     background("steelblue");
+
+    
 }
 
 function draw() {
@@ -15,7 +17,7 @@ function draw() {
         score++;
     }
     else if ( kb.presses("down") ) {
-
+        score--;
     }
 
     textSize(16);
