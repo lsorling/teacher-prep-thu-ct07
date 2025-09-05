@@ -28,7 +28,7 @@ let startGame = false;
 let flapSound;
 let dieSound;
 
-// 7.2 display score digits
+// 7.2 display score using digits
 let score = 0;
 let digitImgs = [];
 let scoreGroup;
