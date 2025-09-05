@@ -136,10 +136,11 @@ function draw() {
     if (kb.presses('space') || mouse.presses()) {
         startScreenLabel.visible = false;
         startGame = true;
-        bird.collider = "dynamic";
     }
 
     if (startGame) {
+        bird.collider = "dynamic";
+
         // 4.4 keyboard and mouse inputs
         // teach OR condition, using || 2 pipe symbols
         //
