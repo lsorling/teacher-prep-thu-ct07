@@ -1,7 +1,8 @@
 week 11 (next week)
 
 also completed game restart
-left 
+left sound effects
+and "day and night" cycle challenge
 
 ##############################################
 week 10 (11-sep)
