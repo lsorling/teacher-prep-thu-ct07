@@ -6,7 +6,9 @@ so i still didnt learn whether if include .ts files are enough or not
 or i will need those snapshot .js files (dependencies)
 
 
---------------
+##########################
+trying to predict what is in end-sem test
+
 
 mid sem
 
