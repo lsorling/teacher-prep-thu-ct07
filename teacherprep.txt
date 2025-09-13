@@ -1,11 +1,16 @@
 week 11 (next week)
 
+also completed 
+
 ##############################################
 week 10 (11-sep)
 
 still have 2 set of slides
 07-start screen, display score
 08-sound effects, game restart
+
+finished lesson 7 slides
+
 
 ##############################################
 week 9 (4-sep)
