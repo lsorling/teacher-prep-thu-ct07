@@ -1,2 +1,12 @@
 // playground file
-function 
+function preload() {
+
+}
+
+function setup() {
+
+}
+
+function draw() {
+    
+}
