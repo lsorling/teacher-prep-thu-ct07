@@ -12,5 +12,7 @@ function setup() {
 }
 
 function draw() {
-
+    if (kb.presses("1")) {
+        soundFX.play();
+    }
 }
