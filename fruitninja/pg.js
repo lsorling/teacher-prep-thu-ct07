@@ -1,6 +1,10 @@
 // playground file
-function preload() {
 
+let soundFX;
+let bgm;
+
+function preload() {
+    soundFX = loadSound("assets/")
 }
 
 function setup() {
@@ -8,5 +12,5 @@ function setup() {
 }
 
 function draw() {
-    
+
 }
