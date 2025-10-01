@@ -2,14 +2,14 @@ week 13 (this week)
 
 
 ##############################################
-week 12 ()
+week 12 (25-Sep)
 
 omg almost finished lesson 1 slides for fruit ninja
 he started checking image size, like dojo
 he decided on his canvas size for game.
 
 ##############################################
-week 11 ()
+week 11 (18-Sep)
 
 also completed game restart
 left sound effects
